@@ -1,0 +1,23 @@
+.idea/
+
+.py[cod]
+
+.DS_Store
+
+env
+env*
+dist
+build
+*.egg
+*.egg-info
+_mailinglist
+.tox
+.cache/
+.idea/
+
+# Coverage reports
+htmlcov
+.coverage
+.coverage.*
+*,cover
+local.cfg
