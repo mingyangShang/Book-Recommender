@@ -1,4 +1,4 @@
-SiteNav{
+#SiteNav{
     Width: 100%;
 }
 .site-nav-home{
@@ -17,7 +17,7 @@ SiteNav{
 .site-nav .site-nav-bd .site-nav-bd-r{
     float: right;
 }
-nav-bd .site-nav-bd-r .menu{
+#nav-bd .site-nav-bd-r .menu{
     float: left;
 }
 .site-nav-bd .menu{
@@ -109,7 +109,7 @@ li{
     border-color: #e9e9e2; }
   #nav-book .nav-logo {
     background: url(../images/nav_logo.png) no-repeat 0 12px;
-    background-image: -webkit-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png?s=1) 2x);
+    /*background-image: -webkit-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png?s=1) 2x);*/
     background-image: -moz-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png?s=1) 2x);
     background-image: -ms-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png) 2x);
     background-image: -o-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png) 2x); }
