@@ -49,5 +49,42 @@
             </div>
         </div>
     </div>
+
+    <div id="content-book" class="article">
+        <div class="section books-express">
+            <div class="bd">
+                <div class="carousel">
+                    <div class="slide-list" style="width: 100%; left:-100px;">
+                        <ul class="list-col list-col5 list-express slide-item">
+                            {% for book in books %}
+                                <li>
+                                    <div class="cover">
+                                        <a href="/books/{{book.name}}" title="book-info">
+                                            <img src="{{book.cover}}" width="200px" height="150px" />
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="title">
+                                            {{book.name}}
+                                            <a class href="" title="book-title"></a>
+                                        </div>
+                                        <div class="author">
+                                            {{book.author}}
+                                        </div>
+                                        <div class="score">
+                                            {{book.score}}
+                                        </div>
+                                        <div class="more-meta">
+                                            <h4 class="title"></h4>
+                                        </div>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

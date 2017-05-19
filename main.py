@@ -6,8 +6,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    most_popular_books = [Book("Book1", "isbn1", "author1", "1")]
+    most_popular_books = [Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")]
     return render_template('homepage.html', books=most_popular_books)
+
+@app.route('/books/<bookname>/')
+def book_info():
+    return render_template('homepage.html', books=[])
 
 @app.errorhandler(404)
 def page_not_found(error):
