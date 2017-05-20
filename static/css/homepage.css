@@ -212,3 +212,121 @@ form {
   margin: 0;
   padding: 0;
   border: 0px; }
+
+.article{
+    float: none;
+    width: 1000px;
+    padding-right: 0px;
+}
+.section{
+    margin-bottom: 50px;
+}
+.books-express.carousel{
+    height: 440px;
+}
+.carousel{
+    overflow: hidden;
+    position: relative;
+    /*height: 351px;*/
+    width: 800px;
+    margin: auto;
+}
+.slide-list{
+    position: relative;
+    font-size: 0;
+    width: 100%;
+}
+.books-express .slide-item{
+    width: 605px;
+}
+.section .list-col5{
+    font-size: 0;
+    margin: 0 -15px 0 0;
+}
+.slide-list .slide-item{
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    width: 100%;
+    margin: auto;
+}
+.books-express .list-express li{
+    overflow: hidden;
+    margin: 0 15px 15px 0;
+}
+.section .list-col5 li{
+    width: 106px;
+    margin: 0 15px 20px 0;
+}
+.list-col li{
+    float: none;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+}
+.list-col5 li {
+    float: left;
+    width: 129px;
+    margin-right: 10px;
+}
+.books-express .list-express .cover {
+    width: 106px;
+    height: 158px;
+    margin-bottom: 7px;
+    overflow: hidden;
+}
+.section .list-col5 .cover {
+    margin-bottom: 5px;
+}
+.list-col5 .cover {
+    margin-bottom: 5px;
+}
+.books-express .list-express .info {
+    padding: 0 2px;
+}
+.section .list-col5 .info {
+    margin: 0;
+    line-height: 1;
+}
+.list-col5 .info {
+    display: block;
+    color: #666;
+    margin-bottom: 3px;
+}
+.books-express .list-express .title {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+.section .list-col5 .title {
+    font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 106px;
+    font-weight: bold;
+}
+.carousel .title, .carousel .author, .carousel .publisher {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-col5 .title {
+    display: block;
+    font-size: 12px;
+}
+.books-express .list-express .author {
+    color: #333;
+    width: 102px;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.carousel .title, .carousel .author, .carousel .publisher {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a:link, a:visited, a:focus {
+    color: #3377aa;
+}

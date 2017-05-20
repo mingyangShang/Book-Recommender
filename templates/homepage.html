@@ -54,7 +54,7 @@
         <div class="section books-express">
             <div class="bd">
                 <div class="carousel">
-                    <div class="slide-list" style="width: 100%; left:-100px;">
+                    <div class="slide-list">
                         <ul class="list-col list-col5 list-express slide-item">
                             {% for book in books %}
                                 <li>
@@ -65,8 +65,7 @@
                                     </div>
                                     <div class="info">
                                         <div class="title">
-                                            {{book.name}}
-                                            <a class href="" title="book-title"></a>
+                                            <a class href="/books/{{book.name}}" title="book-title">{{book.name}}</a>
                                         </div>
                                         <div class="author">
                                             {{book.author}}
