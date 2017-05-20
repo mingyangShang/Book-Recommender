@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nav_top.css') }}">
+{% block nav_top %}
+    <div>
+        <div id="SiteNav" class="site-nav site-nav-home">
+            <div id="SiteNavBd" class="site-nav-bd">
+                <ul id="SiteNavBdR" class="site-nav-bd-r">
+                    <li class="menu menu-reg">
+                        <div id="MenuRegHd" class="menu-hd">
+                            <a href="userpage.html" target="_top">Register</a>
+                        </div>
+                    </li>
+                    <li class="site-nav-pipe">
+                        <span class="site-nav-pipe-line">|</span>
+                    </li>
+                    <li class="menu menu-login">
+                        <div id="MenuLoginHd" class="menu-hd" >
+                            <a href="userpage.html" target="_top">Login</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

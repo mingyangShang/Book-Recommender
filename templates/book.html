@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <title>{{ book.name }}</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/book.css') }}">
-{% block body %}
+{% block book_info %}
     <div id="wrapper">
         <h1>
             <span>{{ book.name }}</span>
@@ -32,24 +31,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="interest_sectl">
+                        <div id="interest_sectl">
                             <div class="rating_wrap clearbox">
                                 <div class="rating_logo">Rating</div>
                                 <div class="rating_self clearfix">
-                                    ::before
                                     <strong class="ll rating_num">9.2</strong>
                                     <span content="10.0"></span>
-                                </div>
-                                <div class="rating_right">
-                                    <div class="ll bigstar50">
-                                    </div>
-                                    <div class="rating_sum">
-                                        <span class>
-                                            <a href="" class="rating_people">
-                                                <span>14</span>
-                                                 people scored
-                                            </a>
-                                        </span>
+
+                                    <div class="rating_right">
+                                        <div class="ll bigstar50">
+                                        </div>
+                                        <div class="rating_sum">
+                                            <span class>
+                                                <a href="" class="rating_people">
+                                                    <span>14</span>
+                                                     people scored
+                                                </a>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

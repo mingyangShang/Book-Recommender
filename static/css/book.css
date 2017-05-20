@@ -1,0 +1,156 @@
+#wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
+h1 {
+    word-wrap: break-word;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #494949;
+    margin: 0;
+    padding: 0 0 15px 0;
+    line-height: 1.1;
+}
+.clear {
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+}
+#content {
+    min-height: 420px;
+}
+.clearfix {
+    display: block;
+    zoom: 1;
+}
+.grid-16-8 .article {
+    float: left;
+    width: 590px;
+    padding-right: 40px;
+}
+.indent {
+    word-break: break-all;
+}
+.subjectwrap {
+    /*position: none;*/
+    float: none;
+    width: auto;
+}
+.subject {
+    float: left;
+    width: 415px;
+}
+#mainpic {
+    margin: 3px 0 0 0;
+    float: left;
+    text-align: center;
+    margin: 3px 12px 0 0;
+    max-width: 155px;
+    overflow: hidden;
+}
+a:link, a:visited, a:focus {
+    color: #3377aa;
+}
+#mainpic a img {
+    margin-bottom: 10px;
+}
+a img {
+    border-width: 0;
+    vertical-align: middle;
+}
+#info {
+    float: left;
+    max-width: 248px;
+    word-wrap: break-word;
+}
+.pl {
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}
+#interest_sectl {
+    float: left;
+    width: 155px;
+    margin: 2px 0 0 0;
+    padding: 0 0 0 15px;
+    border-left: 1px solid #eaeaea;
+    color: #9b9b9b;
+}
+#interest_sectl .rating_wrap {
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 14px;
+}
+#interest_sectl .rating_num {
+    color: #494949;
+    padding: 0;
+    min-width: 30%;
+    font-size: 30px;
+}
+.clearbox {
+    clear: both;
+    width: 100%;
+    display: block;
+}
+#interest_sectl .rating_wrap .rating_logo {
+    line-height: 1;
+}
+#interest_sectl .rating_self {
+    padding: 0;
+    line-height: 2;
+}
+.starstop {
+    float: left;
+}
+.starstop, .stars {
+    margin-right: 5px;
+}
+.starstop {
+    margin: 0;
+}
+.rating_nums, .rating_num {
+    color: #e09015;
+    font-size: 12px;
+    padding: 0 3px;
+}
+.ll {
+    float: left;
+}
+#interest_sectl .rating_wrap {
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 14px;
+}
+#interest_sectl {
+    float: left;
+    width: 155px;
+    margin: 2px 0 0 0;
+    padding: 0 0 0 15px;
+    border-left: 1px solid #eaeaea;
+    color: #9b9b9b;
+}
+#interest_sectl .rating_right {
+    float: left;
+    padding: 10px 0 10px 6px;
+}
+.bigstar50 {
+    background-position: 0 0px;
+}
+.bigstar50, .bigstar45, .bigstar40, .bigstar35, .bigstar30, .bigstar25, .bigstar20, .bigstar15, .bigstar10, .bigstar05, .bigstar00 {
+    display: inline-block;
+    zoom: 1;
+    background: url(../images/rating.png) no-repeat;
+    background: -webkit-image-set(url(../images/rating.png) 1x, url(../images/rating@2x.png) 2x) no-repeat;
+    background: -moz-image-set(url(../images/rating.png) 1x, url(../images/rating@2x.png) 2x) no-repeat;
+    background: -o-image-set(url(../images/rating.png) 1x, url(../images/rating@2x.png) 2x) no-repeat;
+    background: -ms-image-set(url(../images/rating.png) 1x, url(../images/rating@2x.png) 2x) no-repeat;
+    width: 75px;
+    height: 15px;
+    margin: 1px 0 0 0;
+    overflow: hidden;
+}
+
+#interest_sectl .rating_self .rating_sum {
+    clear: both;
+}
