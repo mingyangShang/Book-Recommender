@@ -46,7 +46,7 @@ h1 {
     float: left;
     text-align: center;
     margin: 3px 12px 0 0;
-    max-width: 155px;
+    /*max-width: 155px;*/
     overflow: hidden;
 }
 a:link, a:visited, a:focus {
@@ -54,6 +54,7 @@ a:link, a:visited, a:focus {
 }
 #mainpic a img {
     margin-bottom: 10px;
+    width:200px;
 }
 a img {
     border-width: 0;
@@ -64,6 +65,25 @@ a img {
     max-width: 248px;
     word-wrap: break-word;
 }
+a.behaviour{
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    background: linear-gradient(top,#4387fd,#4683ea);
+    color: white;
+    padding: 4px 20px;
+    line-height: 40px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
 .pl {
     font: 12px Arial, Helvetica, sans-serif;
     line-height: 150%;
