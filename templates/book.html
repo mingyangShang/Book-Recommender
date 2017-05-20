@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ book.name }}</title>
-</head>
-<body>
+<title>{{ book.name }}</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/book.css') }}">
+{% block body %}
+    <div id="wrapper">
+        <h1>
+            <span>{{ book.name }}</span>
+            <div class="clear"></div>
+        </h1>
+        <div id="content">
+            <div class="grid-16-8 clearfix">
+                <div class="article">
+                    <div class="indent">
+                        <div class="subjectwrap clearfix">
+                            <div class="subject clearfix">
+                                <div id="mainpic">
+                                    <a href="{{ book.cover }}" title="{{ book.name }}">
+                                        <img src="{{ book.cover }}" alt="{{ book.name }}">
+                                    </a>
+                                </div>
 
-</body>
-</html>
+                                <div id="info">
+                                    <span>
+                                        <span class="pl">Author : </span>
+                                        <a class="" href="">{{ book.author }}</a>
+                                    </span>
+                                    <br>
+                                    <span class="pl">
+                                        ISBN :
+                                    </span>
+                                    {{ book.isbn }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interest_sectl">
+                            <div class="rating_wrap clearbox">
+                                <div class="rating_logo">Rating</div>
+                                <div class="rating_self clearfix">
+                                    ::before
+                                    <strong class="ll rating_num">9.2</strong>
+                                    <span content="10.0"></span>
+                                </div>
+                                <div class="rating_right">
+                                    <div class="ll bigstar50">
+                                    </div>
+                                    <div class="rating_sum">
+                                        <span class>
+                                            <a href="" class="rating_people">
+                                                <span>14</span>
+                                                 people scored
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
