@@ -6,7 +6,7 @@
 {% block content %}
     <div id="user">
         <div class="info">
-            <div class="title">
+            <div class="head">
                 <span>User info></span>
                 <br>
             </div>
@@ -14,11 +14,14 @@
                 <img src="{{url_for('static', filename='images/default_avatar.png')}}"/>
             </div>
             <div class="name">
-                <span>Name: </span>{{username}}
+                <div class="infoline">
+                    <span class="key">Name: </span>
+                    <span class="value">{{username}}</span>
+                </div>
             </div>
         </div>
         <div class="history buyed">
-            <div class="nav title">
+            <div class="nav head">
                 <span>Buy History></span>
                 <br>
             </div>

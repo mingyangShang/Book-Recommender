@@ -10,7 +10,20 @@
     float: left;
 }
 
-#user .title{
+#user .key{
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}
+#user .value{
+
+}
+#user .info .infoline{
+    width: 150px;
+    margin: auto;
+}
+
+#user .head{
     background-color: #e9e9e2;
     font-size: 12px;
     width: 90%;

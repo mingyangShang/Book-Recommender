@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/login.css')}}">
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/login.js') }}"></script>
+{% block content %}
+    <div id="login">
+        <div class="desk-front sign-flow clearfix sign-flow-simple">
+
+            <div class="index-tab-navs">
+                <div class="navs-slider" data-active-index="0">
+                    <a id="signup_link" href="#signup" class="active">Register</a>
+                    <a id="signin_link" href="#signin">Login</a>
+                    <span class="navs-slider-bar"></span>
+                </div>
+            </div>
+
+
+            <div id="signin_div" class="view view-signin" data-za-module="SignInForm" style="display: none;">
+                <form method="POST" novalidate="novalidate">
+                    <input type="hidden" name="_xsrf" value="e655ba2ea148e83942ee59c293fc9657">
+                    <div class="group-inputs">
+
+                        <div class="account input-wrapper">
+
+                            <input type="text" name="account" aria-label="UserName" placeholder="Username" required="">
+                        </div>
+                        <div class="verification input-wrapper">
+                            <input type="password" name="password" aria-label="Password" placeholder="Password" required="">
+                            <button type="button" class="send-code-button">获取验证码</button>
+                        </div>
+
+                        <!--<div class="Captcha input-wrapper" data-type="cn" data-za-module="Captcha"-->
+                             <!--style="display: block;">-->
+                            <!--<div class="Captcha-operate">-->
+                                <!--<input type="hidden" name="captcha" required="" data-rule-required="true"-->
+                                       <!--data-msg-required="请点击图中所有倒立的文字" value="">-->
+                                <!--<input type="hidden" name="captcha_type" value="cn" required="">-->
+                                <!--<label class="Captcha-prompt">请点击图中所有倒立的文字</label>-->
+                                <!--<span class="Captcha-refresh js-refreshCaptcha sprite-index-icon-refresh"></span>-->
+                            <!--</div>-->
+                            <!--<div class="Captcha-imageConatiner">-->
+                                <!--<img class="Captcha-image" alt="验证码"-->
+                                     <!--src="/captcha.gif?r=1495332156270&amp;type=login&amp;lang=cn"-->
+                                     <!--style="display: block;">-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                    </div>
+                    <div class="button-wrapper command">
+                        <button class="sign-button submit" type="submit">Login</button>
+                    </div>
+                    <!--<div class="signin-misc-wrapper clearfix">-->
+
+                        <!--<button type="button" class="signin-switch-button">手机验证码登录</button>-->
+
+                        <!--<a class="unable-login" href="#">无法登录？</a>-->
+                    <!--</div>-->
+
+                    <!--<div class="social-signup-wrapper" data-za-module="SNSSignIn">-->
+                        <!--<span class="name js-toggle-sns-buttons">社交帐号登录</span>-->
+
+                        <!--<div class="sns-buttons">-->
+                            <!--<a title="微信登录" class="js-bindwechat" href="#"><i class="sprite-index-icon-wechat"></i></a>-->
+                            <!--<a title="微博登录" class="js-bindweibo" href="#"><i class="sprite-index-icon-weibo"></i></a>-->
+                            <!--<a title="QQ 登录" class="js-bindqq" href="#"><i class="sprite-index-icon-qq"></i></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                </form>
+
+                <!--<div class="QRCode">-->
+                    <!--<button class="QRCode-toggleButton">-->
+                        <!--<span class="sprite-global-icon-qrcode"></span>-->
+                        <!--<span class="QRCode-toggleButtonText ">下载知乎 App</span>-->
+                    <!--</button>-->
+                    <!--<div class="QRCode-card">-->
+                        <!--<div class="QRCode-image"></div>-->
+                        <!--<div class="sprite-index-icon-arrow"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+            </div>
+            <div id="signup_div" class="view view-signup selected" data-za-module="SignUpForm" style="display: block;">
+                <form class="zu-side-login-box" action="/register/email" id="sign-form-1" autocomplete="off"
+                      method="POST" novalidate="novalidate">
+                    <input type="password" hidden="">
+                    <input type="hidden" name="_xsrf" value="e655ba2ea148e83942ee59c293fc9657">
+                    <div class="group-inputs">
+
+
+                        <div class="name input-wrapper">
+                            <input required="" type="text" name="fullname" aria-label="Username" placeholder="Username">
+                        </div>
+                        <div class="input-wrapper">
+
+                            <input required="" type="text" class="account" name="password" aria-label="Password"
+                                   placeholder="Password">
+
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input required="" type="password" name="password2" aria-label="password2" placeholder="Password again"
+                                   autocomplete="off">
+                        </div>
+
+                        <div class="input-wrapper captcha-module" data-type="en">
+                            <input id="captcha" name="captcha" placeholder="验证码" required="" data-rule-required="true"
+                                   data-msg-required="请填写验证码">
+                            <div class="captcha-container">
+
+                                <img class="js-refreshCaptcha captcha" width="120" height="30"
+                                     data-tooltip="s$t$看不清楚？换一张" alt="验证码">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="button-wrapper command">
+                        <button class="sign-button submit" type="submit">Register</button>
+                    </div>
+                </form>
+
+                <!--<p class="agreement-tip">点击「注册」按钮，即代表你同意<a href="/terms" target="_blank">《知乎协议》</a></p>-->
+
+                <!--<div class="QRCode">-->
+                    <!--<button class="QRCode-toggleButton">-->
+                        <!--<span class="sprite-global-icon-qrcode"></span>-->
+                        <!--<span class="QRCode-toggleButtonText ">下载知乎 App</span>-->
+                    <!--</button>-->
+                    <!--<div class="QRCode-card">-->
+                        <!--<div class="QRCode-image"></div>-->
+                        <!--<div class="sprite-index-icon-arrow"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
