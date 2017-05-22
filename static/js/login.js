@@ -62,8 +62,8 @@ function signin() {
                     alert(data.error);
                 } else if (data.result == 1) {
                     alert(data.msg);
-                    setCookie('logined', true);
-                    setCookie('username', data.content.username);
+                    $.cookie('logined', true, {expires: 7, path: '/'});
+                    $.cookie('user', data.content.username, {expires: 7, path: '/'});
                     window.location.replace('/');
                 }
             },
