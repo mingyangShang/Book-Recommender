@@ -38,6 +38,10 @@ function signup() {
                     alert(data.error);
                 } else if (data.result == 1) {
                     alert(data.msg);
+                    //to login
+                    switchToSignin();
+                    $('#signin-form input[name="account"]').val(data.content.username);
+                    $('#signin-form input[name="password"]').val('');
                 }
             },
             error: function (request) {
@@ -73,25 +77,3 @@ function signin() {
         });
     });
 }
-
-
-    // $("#signup-form").submitForm({
-    //     url : "/register/",
-    //     cache: true,
-    //     dataType: "text",
-    //     callback: function(data) {
-    //         alert(data.content);
-    //         return false;
-    //     },
-    //     before: function() {
-    //         alert('before submit form');
-    //     }
-    // }).submit();
-
-function doLogin() {
-
-}
-
-    // username = $("#signup_div input[name=username]").val()
-    // password = $('#signup_div input[name=password]').val()
-    // alert(username + ',' + password)

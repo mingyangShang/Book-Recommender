@@ -29,7 +29,7 @@ def register():
        if request.form['type'] == 'signup':
            username, userpwd = request.form['username'], request.form['password']
            if len(username) >0 and len(userpwd) > 6:
-               return json.dumps({"result": 1, "msg": "Register Succeed!"})
+               return json.dumps({"result": 1, "msg": "Register Succeed!", "content": {"username": username}})
            else:
                return json.dumps({"result":-1, "error": "invalid username or password"})
        elif request.form['type'] == 'signin':
