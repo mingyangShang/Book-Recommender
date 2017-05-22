@@ -9,5 +9,7 @@
 <div class="page">
     {% include 'nav_top.html' %}
     {% include 'search.html' %}
+    {% block nav %} {% endblock %}
+    {% block hint %} {% endblock %}
     {% block content %} {% endblock %}
 </div>
