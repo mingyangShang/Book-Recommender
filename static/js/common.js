@@ -20,3 +20,19 @@ function setCookie(c_name, value, expiredays) {
     document.cookie = c_name + "=" + escape(value) +
         ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString())
 }
+
+// $(document).ready(function () {
+//    $("#search-form input[type='submit']").click(searchBooks);
+// });
+//
+// function searchBooks(){
+//     alert('search');
+//     $('#search-form').submit(function (e) {
+//         search_text = $("#search-form input[name='search_text']").val()
+//         if(search_text.empty()){
+//             e.preventDefault();
+//             alert('search key can not be empty');
+//             return;
+//         }
+//     });
+// }

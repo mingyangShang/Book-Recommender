@@ -21,10 +21,16 @@ def user_info(username):
 def login():
     return render_template('login.html')
 
+@app.route('/search/')
+def search():
+    print 'search:', request.args
+    if request.method == 'GET':
+        request.args['search_text']
+        return render_template('search-result-page.html', books=[Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10)
+
+
 @app.route('/register/', methods=['POST'])
 def register():
-    print "register"
-    print request.form
     if request.method == 'POST':
        if request.form['type'] == 'signup':
            username, userpwd = request.form['username'], request.form['password']
