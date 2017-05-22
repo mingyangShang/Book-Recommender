@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/login.css')}}">
 <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
 <script src="{{ url_for('static', filename='js/login.js') }}"></script>
 {% block content %}
     <div id="login">
@@ -16,8 +17,9 @@
 
 
             <div id="signin_div" class="view view-signin" data-za-module="SignInForm" style="display: none;">
-                <form method="POST" novalidate="novalidate">
+                <form method="POST" novalidate="novalidate" id="signin-form">
                     <input type="hidden" name="_xsrf" value="e655ba2ea148e83942ee59c293fc9657">
+                    <input type="hidden" name="type" value="signin">
                     <div class="group-inputs">
 
                         <div class="account input-wrapper">
@@ -82,19 +84,20 @@
 
             </div>
             <div id="signup_div" class="view view-signup selected" data-za-module="SignUpForm" style="display: block;">
-                <form class="zu-side-login-box" action="/register/email" id="sign-form-1" autocomplete="off"
+                <form class="zu-side-login-box" id="signup-form" autocomplete="off"
                       method="POST" novalidate="novalidate">
                     <input type="password" hidden="">
                     <input type="hidden" name="_xsrf" value="e655ba2ea148e83942ee59c293fc9657">
+                    <input type="hidden" name="type" value="signup">
                     <div class="group-inputs">
 
 
                         <div class="name input-wrapper">
-                            <input required="" type="text" name="fullname" aria-label="Username" placeholder="Username">
+                            <input required="" type="text" name="username" aria-label="Username" placeholder="Username">
                         </div>
                         <div class="input-wrapper">
 
-                            <input required="" type="text" class="account" name="password" aria-label="Password"
+                            <input required="" type="password" class="account" name="password" aria-label="Password"
                                    placeholder="Password">
 
                         </div>

@@ -4,6 +4,8 @@
 $(document).ready(function(){
    $("#signup_link").click(switchToSignup);
    $("#signin_link").click(switchToSignin);
+   $("#signup_div .sign-button.submit").click(signup);
+   $("#signin_div .sign-button.submit").click(signin);
 });
 
 function switchToSignup(){
@@ -11,7 +13,7 @@ function switchToSignup(){
     $("#signin_link").removeClass('active');
     $("#signup_div").css('display', 'block');
     $('#signin_div').css('display' ,'none');
-    $('.index-tab-navs .navs-slider .navs-slider-bar').css('left', '0')
+    $('.index-tab-navs .navs-slider .navs-slider-bar').css('left', '0');
 }
 
 function switchToSignin(){
@@ -19,5 +21,77 @@ function switchToSignin(){
     $("#signup_link").removeClass('active');
     $("#signin_div").css('display', 'block');
     $('#signup_div').css('display', 'none');
-    $('.index-tab-navs .navs-slider .navs-slider-bar').css('left', '4em')
+    $('.index-tab-navs .navs-slider .navs-slider-bar').css('left', '4em');
 }
+
+function signup() {
+    $('#signup-form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: '/register/',
+            type: 'POST',
+            dataType: 'text',
+            data: $("#signup-form").serialize(),
+            success: function (data) {
+                data = $.parseJSON(data);
+                if (data.result == -1) {
+                    alert(data.error);
+                } else if (data.result == 1) {
+                    alert(data.msg);
+                }
+            },
+            error: function (request) {
+                alert('error');
+                alert(request.error);
+            }
+        });
+    });
+}
+
+function signin() {
+    $("#signin-form").submit(function (e){
+        e.preventDefault();
+        $.ajax({
+            url: '/register/',
+            type: 'POST',
+            dataType: 'text',
+            data: $("#signin-form").serialize(),
+            success: function (data) {
+                data = $.parseJSON(data);
+                if (data.result == -1) {
+                    alert(data.error);
+                } else if (data.result == 1) {
+                    alert(data.msg);
+                    setCookie('logined', true);
+                    setCookie('username', data.content.username);
+                    window.location.replace('/');
+                }
+            },
+            error: function (request) {
+                alert(request.error);
+            }
+        });
+    });
+}
+
+
+    // $("#signup-form").submitForm({
+    //     url : "/register/",
+    //     cache: true,
+    //     dataType: "text",
+    //     callback: function(data) {
+    //         alert(data.content);
+    //         return false;
+    //     },
+    //     before: function() {
+    //         alert('before submit form');
+    //     }
+    // }).submit();
+
+function doLogin() {
+
+}
+
+    // username = $("#signup_div input[name=username]").val()
+    // password = $('#signup_div input[name=password]').val()
+    // alert(username + ',' + password)

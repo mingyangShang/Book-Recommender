@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, session, make_response, json
 
 from model.model import Book
 
@@ -17,9 +17,24 @@ def book_info(bookname):
 def user_info(username):
     return render_template('userpage.html', username="starkshang", books=[Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10)
 
-@app.route('/login')
+@app.route('/login/')
 def login():
     return render_template('login.html')
+
+@app.route('/register/', methods=['POST'])
+def register():
+    print "register"
+    print request.form
+    if request.method == 'POST':
+       if request.form['type'] == 'signup':
+           username, userpwd = request.form['username'], request.form['password']
+           if len(username) >0 and len(userpwd) > 6:
+               return json.dumps({"result": 1, "msg": "Register Succeed!"})
+           else:
+               return json.dumps({"result":-1, "error": "invalid username or password"})
+       elif request.form['type'] == 'signin':
+           username, userpwd = request.form['account'], request.form['password']
+           return json.dumps({"result": 1, "msg": "Login Succeed!", "content": {"username": username}})
 
 @app.errorhandler(404)
 def page_not_found(error):
