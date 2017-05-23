@@ -2,5 +2,5 @@
  * Created by shangmingyang on 5/23/17.
  */
 $(document).ready(function () {
-   $(".hd").css('display', 'none');
+    $(".bd .hd h2 span[class='title']").text('History');
 });
