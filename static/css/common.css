@@ -1,0 +1,16 @@
+.hd h2{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+h2 .link-more {
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+    padding-left: 10px;
+}
+a:link, a:visited, a:focus {
+    color: #3377aa;
+}

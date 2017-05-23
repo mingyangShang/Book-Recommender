@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/userinfo.css') }}">
-
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/common.css') }}">
+<script src="{{ url_for('static', filename='js/user.js') }}"></script>
 {% extends 'layout.html' %}
 
 {% block content %}
     <div id="user">
         <div class="info">
-            <div class="head">
-                <span>User info ></span>
-                <br>
+            <div class="hd">
+                <h2>User info</h2>
             </div>
             <div class="avatar">
                 <img src="{{url_for('static', filename='images/default_avatar.png')}}"/>
@@ -21,10 +21,10 @@
             </div>
         </div>
         <div class="history buyed">
-            <div class="nav head">
-                <span>Buy History ></span>
-                <br>
-            </div>
+            <!--<div class="nav hd">-->
+                <!--<h2>Buy History ></h2>-->
+                <!--<br>-->
+            <!--</div>-->
             {% include 'books.html' %}
         </div>
     </div>

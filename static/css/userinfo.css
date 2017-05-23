@@ -46,3 +46,8 @@
 #user .article{
     width: auto;
 }
+
+#user .hd h2{
+    margin-bottom: 6px;
+    color: #666;
+}
