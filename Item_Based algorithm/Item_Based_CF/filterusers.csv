@@ -1,0 +1,941 @@
+2,"""stockton california usa""","""18"""
+7,"""washington dc usa""",NULL
+8,"""timmins ontario canada""",NULL
+9,"""germantown tennessee usa""",NULL
+10,"""albacete wisconsin spain""","""26"""
+12,"""fort bragg california usa""",NULL
+14,"""mediapolis iowa usa""",NULL
+16,"""albuquerque new mexico usa""",NULL
+17,"""chesapeake virginia usa""",NULL
+19,"""weston ","14"""
+20,"""langhorne pennsylvania usa""","""19"""
+22,"""erfurt thueringen germany""",NULL
+23,"""philadelphia pennsylvania usa""",NULL
+26,"""bellevue washington usa""",NULL
+32,"""portland oregon usa""",NULL
+36,"""montreal quebec canada""","""24"""
+38,"""viterbo lazio italy""","""34"""
+39,"""cary north carolina usa""",NULL
+42,"""appleton wisconsin usa""","""17"""
+44,"""black mountain north carolina usa""","""51"""
+51,"""renton washington usa""","""34"""
+53,"""tacoma washington usa""",NULL
+56,"""cheyenne wyoming usa""","""24"""
+64,"""lyon rhone france""","""32"""
+67,"""framingham massachusetts usa""","""43"""
+68,"""montreal quebec canada""",NULL
+69,"""vancouver british columbia canada""",NULL
+70,"""rochester new york usa""","""44"""
+73,"""wentzville missouri usa""",NULL
+75,"""long beach california usa""","""37"""
+77,"""vancouver british columbia canada""",NULL
+78,"""oakland california usa""","""18"""
+79,"""ottawa ontario canada""","""20"""
+81,"""santa cruz california usa""",NULL
+82,"""del mar california usa""",NULL
+83,"""eugene oregon usa""",NULL
+85,"""london england united kingdom""","""41"""
+86,"""los angeles california usa""",NULL
+87,"""richardson texas usa""",NULL
+88,"""fayetteville georgia usa""",NULL
+91,"""toronto/newmarket ",NULL
+92,"""castellar del valles barcelona spain""","""20"""
+95,"""grand island new york usa""",NULL
+97,"""mechanicsburg pennsylvania usa""",NULL
+99,"""franktown colorado usa""","""42"""
+100,"""madrid n/a spain""","""44"""
+102,"""barcelona n/a spain""",NULL
+107,"""lethbridge alberta canada""",NULL
+109,"""muncie indiana usa""","""20"""
+110,"""peoira illinois usa""",NULL
+114,"""ligonier pennsylvania usa""","""57"""
+125,"""lansing michigan usa""","""49"""
+129,"""bloomington minnesota usa""","""47"""
+132,"""silver spring maryland usa""","""38"""
+133,"""jacksonville florida usa""","""45"""
+135,"""berkshire new york usa""",NULL
+137,"""vancouver british columbia canada""",NULL
+139,"""baltimore maryland usa""","""35"""
+141,"""darien new york usa""",NULL
+144,"""cape girardeau missouri usa""","""62"""
+151,"""darwin northern territory australia""",NULL
+160,"""almada n/a portugal""","""20"""
+162,"""newark delaware usa""",NULL
+165,"""olympia washington usa""","""62"""
+169,"""arlington virginia usa""",NULL
+176,"""london london united kingdom""","""34"""
+178,"""rexford new york usa""","""28"""
+182,"""buitenpost fryslân netherlands""","""36"""
+183,"""porto porto portugal""","""27"""
+185,"""baton rouge louisiana usa""","""17"""
+190,"""wezembeek-oppem brussels belgium""","""33"""
+193,"""mumbai maharashtra india""","""23"""
+199,"""austin texas usa""","""38"""
+202,"""ottawa ontario canada""","""28"""
+204,"""turner oregon usa""","""15"""
+207,"""west bend wisconsin usa""",NULL
+212,"""manila n/a philippines""","""21"""
+215,"""port alberni british columbia canada""","""20"""
+217,"""spencer massachusetts usa""",NULL
+221,"""palm beach florida usa""","""79"""
+224,"""strafford missouri usa""",NULL
+226,"""new york new york usa""",NULL
+228,"""ann arbor michigan usa""","""41"""
+230,"""ny new york usa""",NULL
+232,"""mumbai maharashtra india""","""16"""
+233,"""tampere pirkanmaa finland""",NULL
+236,"""s. pasadena california usa""",NULL
+237,"""plymouth minnesota usa""","""27"""
+241,"""auburn alabama usa""",NULL
+242,"""neuffen baden-wuerttemberg germany""","""37"""
+243,"""arden hills minnesota usa""",NULL
+276725,"""tyler texas usa""",NULL
+276726,"""seattle washington usa""",NULL
+276727,"""h new south wales australia""","""16"""
+276729,"""rijeka n/a croatia""","""16"""
+276733,"""paris n/a france""","""37"""
+276736,"""salzburg salzburg austria""",NULL
+276737,"""sydney new south wales australia""","""14"""
+276744,"""torrance california usa""",NULL
+276745,"""berlin berlin germany""","""27"""
+276746,"""fort worth ",NULL
+276747,"""iowa city iowa usa""","""25"""
+276748,"""jubail ind.-city eastern province saudi arabia""","""39"""
+276751,"""zuerich zh switzerland""",NULL
+276754,"""alberta beach alberta canada""","""19"""
+276755,"""frankfurt am main hessen germany""","""32"""
+276760,"""santander n/a spain""","""25"""
+276762,"""duisburg nordrhein-westfalen germany""","""25"""
+276765,"""renesse zeeland netherlands""",NULL
+276768,"""maastricht limburg netherlands""","""23"""
+276772,"""bonn nordrhein-westfalen germany""",NULL
+276774,"""bern bern switzerland""","""28"""
+276780,"""vva. de la serena badajoz spain""","""18"""
+276786,"""madrid madrid spain""","""34"""
+276788,"""mentone california usa""",NULL
+276796,"""manchester england united kingdom""","""21"""
+276798,"""mannheim baden-wuerttemberg germany""","""31"""
+276800,"""dunedin otago new zealand""","""23"""
+276803,"""almada almada portugal""","""22"""
+276804,"""st. louis missouri usa""","""14"""
+276806,"""genova ","28"""
+276808,"""phoenix arizona usa""","""25"""
+276811,"""huntley illinois usa""","""19"""
+276812,"""cervo imperia italy""",NULL
+276813,"""sitges barcelona spain""","""29"""
+276814,"""bundaberg queensland australia""","""39"""
+276817,"""telford england united kingdom""","""23"""
+276820,"""scarbrough ontario canada""","""19"""
+276822,"""calgary alberta canada""","""11"""
+276827,"""frankfurt (oder) brandenburg germany""","""20"""
+276828,"""paris paris france""",NULL
+276830,"""ottawa ontario canada""",NULL
+276832,"""epsom new hampshire usa""",NULL
+276833,"""fredericton new brunswick canada""","""14"""
+276835,"""bitterfeld sachsen-anhalt germany""",NULL
+276837,"""columbia missouri usa""",NULL
+276838,"""valencia valencia spain""","""22"""
+276840,"""--------- dc usa""","""16"""
+276842,"""leudelange kanton esch luxembourg""","""14"""
+276847,"""köln nordrhein-westfalen germany""","""27"""
+276848,"""köln nordrhein-westfalen germany""","""41"""
+276850,"""toronto ontario canada""","""16"""
+276852,"""canberra australian capital territory australia""","""18"""
+276853,"""lugo galiza spain""","""17"""
+276854,"""dandenong north victoria australia""","""22"""
+276856,"""mirecourt lorraine france""",NULL
+276857,"""blanes girona spain""","""19"""
+276859,"""ottawa ontario canada""",NULL
+276861,"""zauggenried bern switzerland""","""17"""
+276862,"""calgary alberta canada""",NULL
+276863,"""campinas são paulo brazil""","""33"""
+276866,"""mönchengladbach nordrhein-westfalen germany""","""27"""
+276869,"""bloomington indiana usa""","""31"""
+276870,"""amsterdam noord holland netherlands""","""36"""
+276872,"""são paulo são paulo brazil""","""43"""
+276873,"""norwich england united kingdom""","""26"""
+276875,"""roma lazio italy""",NULL
+276878,"""albany california usa""",NULL
+276879,"""vedano olona lombardia italy""",NULL
+276884,"""badalona catalunya spain""","""22"""
+276887,"""arlington massachusetts usa""",NULL
+276888,"""frosinone lazio italy""",NULL
+276889,"""akron ohio usa""","""32"""
+276890,"""dorset england united kingdom""","""0"""
+276896,"""mena arkansas usa""","""14"""
+276904,"""battle ground washington usa""",NULL
+276905,"""toronto ontario canada""","""22"""
+276911,"""sevilla sevilla spain""","""20"""
+276912,"""st james western australia australia""","""28"""
+276915,"""painesville ohio usa""",NULL
+276916,"""denver colorado usa""",NULL
+276925,"""barcelona barcelona spain""","""22"""
+276927,"""croydon england united kingdom""","""26"""
+276928,"""highland california usa""","""10"""
+276929,"""collex geneva switzerland""","""35"""
+276934,"""firenze toscana italy""",NULL
+276936,"""kitzbuehel tirol austria""","""32"""
+276939,"""poissy yvelines france""","""23"""
+276943,"""berlin berlin germany""","""21"""
+276946,"""milano lombardia italy""",NULL
+276949,"""bolligen bern","24"""
+276950,"""lecco lombardia italy""","""22"""
+276953,"""petaling jaya selangor malaysia""","""18"""
+276954,"""freiburg baden-wuerttemberg germany""","""43"""
+276957,"""iowa city iowa usa""",NULL
+276959,"""rankweil vorarlberg austria""","""52"""
+276963,"""chichester england united kingdom""","""36"""
+276964,"""villa ridge missouri usa""","""34"""
+276965,"""lisbon estremadura portugal""","""29"""
+276975,"""bern bern switzerland""",NULL
+276981,"""el masnou catalunya spain""","""45"""
+276984,"""yarmouth nova scotia canada""","""11"""
+276986,"""haysville kansas usa""","""28"""
+276988,"""sarnia ontario canada""",NULL
+276989,"""edson alberta canada""",NULL
+276990,"""bologna emilia romagna italy""","""22"""
+276992,"""brentwood western australia australia""","""23"""
+276994,"""wien wien austria""","""25"""
+276997,"""vancouver british columbia canada""","""37"""
+276998,"""saint charles missouri usa""","""46"""
+277002,"""york north yorkshire united kingdom""","""36"""
+277007,"""perugia umbria italy""","""18"""
+277009,"""calgary alberta canada""","""30"""
+277010,"""münchen bayern germany""","""36"""
+277012,"""upland california usa""","""60"""
+277018,"""lorraine new york usa""","""21"""
+277019,"""orihuela alicante spain""","""26"""
+277022,"""barcelona catalunya spain""","""32"""
+277023,"""klamath falls oregon usa""","""23"""
+277028,"""ripley new york usa""",NULL
+277031,"""seymour connecticut usa""",NULL
+277032,"""weston wisconsin usa""",NULL
+277035,"""lüneburg niedersachsen germany""",NULL
+277036,"""lisboa lisboa portugal""","""21"""
+277040,"""barcelona barcelona spain""","""27"""
+277042,"""hiram georgia usa""",NULL
+277048,"""augsburg bayern germany""","""26"""
+277051,"""cologne nordrhein-westfalen germany""","""18"""
+277052,"""turuku varsinais-suomi finland""","""26"""
+277053,"""auckland n/a new zealand""","""14"""
+277056,"""karlsruhe baden-württemberg germany""","""24"""
+277058,"""cerdanyola del valles barcelona spain""","""30"""
+277064,"""nepean ontario canada""","""18"""
+277065,"""ann arbor michigan usa""","""34"""
+277072,"""london england united kingdom""",NULL
+277073,"""winnipeg manitoba canada""","""20"""
+277074,"""saint-jean-sur-richelieu quebec canada""","""30"""
+277075,"""bern bern switzerland""","""29"""
+277079,"""berlin berlin germany""",NULL
+277085,"""sydney australian capital territory australia""","""25"""
+277087,"""barcelona cataluña spain""","""29"""
+277090,"""moenchengladbach nordrhein-westfalen germany""","""36"""
+277094,"""spokane washington usa""","""26"""
+277096,"""kingston ontario canada""","""57"""
+277102,"""gloucester england united kingdom""",NULL
+277107,"""eugene oregon usa""","""57"""
+277109,"""wheaton illinois usa""",NULL
+277114,"""jefferson louisiana usa""",NULL
+277116,"""würzburg bayern germany""","""24"""
+277123,"""hummelstown ","60"""
+277124,"""  canada""",NULL
+277128,"""n/a st andrew`s guernsey""","""19"""
+277129,"""köln nordrhein-westfalen germany""","""47"""
+277134,"""chillicothe ohio usa""","""16"""
+277135,"""madison wisconsin usa""",NULL
+277139,"""indianapolis indiana usa""",NULL
+277142,"""los osos ",NULL
+277143,"""prospect connecticut usa""","""34"""
+277149,"""jena thueringen germany""","""14"""
+277155,"""brisbane queensland australia""","""30"""
+277157,"""garden grove california usa""","""70"""
+277159,"""moose jaw saskatchewan canada""",NULL
+277165,"""zaragoza aragon spain""","""36"""
+277168,"""palestine texas usa""","""37"""
+277170,"""pasadena california usa""",NULL
+277171,"""tilton new hampshire usa""","""54"""
+277176,"""albacete albacete spain""","""27"""
+277179,"""charleston south carolina usa""","""45"""
+277180,"""oklahoma city oklahoma usa""",NULL
+277183,"""mesa arizona costa rica""",NULL
+277186,"""loughborough england united kingdom""","""40"""
+277187,"""st. louis missouri usa""","""47"""
+277188,"""waterloo ontario canada""","""42"""
+277189,"""amboy minnesota usa""","""44"""
+277195,"""san francisco california usa""","""54"""
+277196,"""saginaw michigan usa""",NULL
+277197,"""allendale michigan usa""",NULL
+277203,"""olympia washington usa""","""8"""
+277205,"""toronto ontario canada""","""25"""
+277209,"""cassville missouri usa""",NULL
+277212,"""framingham massachusetts usa""",NULL
+277220,"""seattle washington usa""",NULL
+277221,"""dublin n/a ireland""","""43"""
+277228,"""merritt island florida usa""","""46"""
+277229,"""littleton colorado usa""",NULL
+277230,"""efland north carolina usa""",NULL
+277231,"""carpinteria california usa""",NULL
+277232,"""louisville kentucky usa""",NULL
+277235,"""chicago illinois usa""","""36"""
+277237,"""auburn alabama usa""","""42"""
+277240,"""jenkins missouri usa""",NULL
+277242,"""boise idaho usa""",NULL
+277243,"""alpine texas usa""",NULL
+277244,"""des moines iowa usa""",NULL
+277245,"""vancouver british columbia canada""",NULL
+277246,"""skillman new jersey usa""",NULL
+277249,"""rome lazio italy""",NULL
+277253,"""langley british columbia canada""","""24"""
+277256,"""raleigh north carolina usa""","""65"""
+277257,"""san jose california usa""",NULL
+277261,"""oberschleissheim bayern germany""","""24"""
+277262,"""brooklyn new york usa""",NULL
+277265,"""culpeper virginia usa""",NULL
+277267,"""napoli campania italy""","""37"""
+277268,"""frankfurt hessen germany""","""26"""
+277269,"""queen creek arizona usa""",NULL
+277271,"""dixon illinois usa""",NULL
+277272,"""porto porto portugal""","""43"""
+277274,"""san francisco california usa""",NULL
+277281,"""ashland oregon usa""",NULL
+277284,"""stratford ontario canada""",NULL
+277285,"""kingston ontario canada""",NULL
+277288,"""glenburn maine usa""","""62"""
+277291,"""red deer alberta canada""",NULL
+277292,"""bend oregon usa""",NULL
+277293,"""manchester new york usa""",NULL
+277305,"""tucson arizona usa""",NULL
+277314,"""st. louis missouri usa""","""53"""
+277315,"""bloomingont indiana usa""","""33"""
+277317,"""oslo n/a norway""","""27"""
+277330,"""durham north carolina usa""","""49"""
+277334,"""utrecht utrecht netherlands""",NULL
+277338,"""berlin berlin germany""",NULL
+277339,"""battle ground washington usa""","""20"""
+277340,"""ann arbor michigan usa""",NULL
+277341,"""tussy oklahoma usa""","""63"""
+277343,"""munich bayern germany""",NULL
+277348,"""lake charles louisiana usa""",NULL
+277351,"""berlin berlin germany""","""44"""
+277353,"""kerby oregon usa""",NULL
+277358,"""rockwall texas usa""","""18"""
+277359,"""myrtle beach south carolina usa""",NULL
+277363,"""norcross georgia usa""","""34"""
+277364,"""st. louis missouri usa""",NULL
+277367,"""london ontario canada""","""15"""
+277369,"""torino piemonte italy""","""38"""
+277371,"""sydney new south wales australia""","""57"""
+277374,"""tucsonaz 85742 arizona usa""",NULL
+277375,"""mönchengladbach nordrhein-westfalen germany""",NULL
+277378,"""vancouver british columbia canada""","""33"""
+277379,"""paderborn nordrhein-westfalen germany""",NULL
+277380,"""roselle park new jersey usa""","""26"""
+277384,"""mosman new south wales australia""",NULL
+277388,"""frankfurt hessen germany""",NULL
+277389,"""montréal quebec canada""",NULL
+277392,"""goiânia goiás/goiânia/centro oeste brazil""","""46"""
+277397,"""albany new york usa""","""67"""
+277399,"""burrum heads queensland australia""",NULL
+277400,"""arenzano genova liguria italy""","""25"""
+277402,"""poquoson virginia usa""",NULL
+277405,"""bismarck north dakota usa""","""10"""
+277408,"""paris missouri usa""",NULL
+277411,"""colorado springs colorado usa""","""48"""
+277413,"""norfolk virginia usa""","""56"""
+277424,"""satellite beach florida usa""",NULL
+277425,"""manchester england united kingdom""","""39"""
+277427,"""gilbert arizona usa""","""48"""
+277432,"""san leandro california usa""","""16"""
+277433,"""lüneburg niedersachsen germany""","""25"""
+277434,"""blairmore alberta canada""",NULL
+277435,"""cedarburg wisconsin usa""","""50"""
+277436,"""stratford iowa usa""","""14"""
+277439,"""turner oregon usa""","""65"""
+277444,"""preston connecticut usa""",NULL
+277453,"""west allis wisconsin usa""",NULL
+277457,"""berlin berlin germany""",NULL
+277461,"""gainesville florida usa""",NULL
+277462,"""vancouver british columbia canada""",NULL
+277466,"""manchester connecticut usa""","""50"""
+277469,"""philippi west virginia usa""",NULL
+277470,"""essex n/a united kingdom""","""45"""
+277471,"""stuttgart baden-wuerttemberg germany""","""23"""
+277473,"""dunbar nebraska usa""","""43"""
+277474,"""rochester new york usa""","""17"""
+277478,"""schiedam zuid-holland netherlands""","""31"""
+277479,"""mauldin south carolina usa""",NULL
+277486,"""albuquerque new mexico usa""","""23"""
+277488,"""barchon liège belgium""","""20"""
+277489,"""rivas vaciamadrid madrid spain""","""18"""
+277502,"""knoxville tennessee usa""",NULL
+277506,"""srq florida usa""",NULL
+277508,"""deventer overijssel netherlands""","""43"""
+277509,"""baixa da banheira setúbal portugal""","""34"""
+277513,"""christiansburg virginia usa""","""50"""
+277514,"""munic n/a germany""",NULL
+277516,"""loudon new hampshire usa""",NULL
+277517,"""doylestown pennsylvania usa""",NULL
+277518,"""fairbanks ",NULL
+277519,"""stockton california usa""","""54"""
+277523,"""woodstock virginia usa""","""62"""
+277525,"""crossfield alberta canada""",NULL
+277526,"""london england united kingdom""","""33"""
+277527,"""oakland california usa""",NULL
+277528,"""redondo beach california usa""","""48"""
+277529,"""st. thomas virgin islands usa""",NULL
+277530,"""winnetka california usa""","""52"""
+277532,"""coquitlam british columbia canada""",NULL
+277533,"""aloha oregon usa""",NULL
+277535,"""clifton illinois usa""","""32"""
+277538,"""mcgregor ontario canada""","""67"""
+277544,"""shingletown california usa""",NULL
+277547,"""rheinfelden aargau switzerland""","""37"""
+277548,"""raleigh north carolina usa""",NULL
+277554,"""oxford michigan usa""","""24"""
+277556,"""redondo beach california usa""","""42"""
+277559,"""lake george new york usa""","""98"""
+277560,"""knoxville tennessee usa""",NULL
+277562,"""tonbridge kent united kingdom""","""22"""
+277563,"""felton california usa""","""66"""
+277565,"""wellington n/a new zealand""",NULL
+277568,"""hamburg hamburg germany""",NULL
+277569,"""los osos california usa""",NULL
+277574,"""palm beach florida usa""","""56"""
+277575,"""st. peters missouri usa""","""42"""
+277579,"""mt pritchard new south wales australia""","""20"""
+277585,"""reading berks united kingdom""","""43"""
+277586,"""haysville kansas usa""",NULL
+277588,"""vitoria alava spain""","""21"""
+277589,"""sunnyvale california usa""",NULL
+277590,"""pengam wales united kingdom""","""18"""
+277594,"""conway arkansas usa""","""30"""
+277595,"""santa margarita california usa""",NULL
+277596,"""st. louis missouri usa""",NULL
+277598,"""cleves ohio usa""",NULL
+277601,"""east lansing michigan usa""",NULL
+277605,"""copenhagen s sjælland denmark""","""30"""
+277610,"""chattanooga tennessee usa""",NULL
+277619,"""haddonfield new jersey usa""","""25"""
+277622,"""va beach virginia usa""",NULL
+277623,"""alamosa co usa""","""54"""
+277627,"""heidelberg baden-wuerttemberg germany""","""32"""
+277629,"""pierre south dakota usa""","""50"""
+277632,"""red deer alberta canada""",NULL
+277633,"""strongsville ohio usa""","""46"""
+277636,"""tampa florida usa""",NULL
+277638,"""peterborough england united kingdom""","""33"""
+277639,"""forsyth montana usa""","""48"""
+277641,"""san francisco california usa""","""50"""
+277643,"""deventer n netherlands""",NULL
+277646,"""washington dc dc usa""","""36"""
+277647,"""vista california usa""",NULL
+277648,"""goodlettsville tennessee usa""","""27"""
+277650,"""burlington vermont usa""","""34"""
+277651,"""toronto ontario canada""","""38"""
+277657,"""beaufort south carolina usa""","""50"""
+277660,"""choisy le roi ile de france france""","""26"""
+277662,"""charleston south carolina usa""",NULL
+277665,"""korb baden-wuerttemberg germany""","""20"""
+277667,"""busana emilia romagna italy""",NULL
+277680,"""grasse alpes-maritimes france""","""35"""
+277681,"""le chesnay ile de france france""","""24"""
+277682,"""bloomington minnesota usa""",NULL
+277687,"""hannover niedersachsen germany""","""41"""
+277688,"""re emilia romagna italy""",NULL
+277689,"""tucson arizona usa""",NULL
+277691,"""red springs north carolina usa""","""66"""
+277696,"""fort collins colorado usa""",NULL
+277697,"""san francisco california usa""","""32"""
+277698,"""san francisco california usa""",NULL
+277700,"""new bern north carolina usa""",NULL
+277701,"""auckland n/a new zealand""","""37"""
+277705,"""port angeles washington usa""","""51"""
+277706,"""lancaster pennsylvania usa""",NULL
+277710,"""douglasville georgia usa""","""56"""
+277711,"""mannheim baden-wuerttemberg germany""","""34"""
+277712,"""roma italy italy""",NULL
+277714,"""kinston north carolina usa""","""33"""
+277716,"""huntington beach california usa""",NULL
+277720,"""double oak texas usa""","""63"""
+277722,"""arnold california usa""",NULL
+277727,"""münster nordrhein-westfalen germany""","""23"""
+277728,"""toronto ontario canada""",NULL
+277737,"""west orange new jersey usa""","""50"""
+277740,"""stockholm stockholm sweden""","""23"""
+277741,"""derby derbyshire united kingdom""","""28"""
+277743,"""dewitt new york usa""",NULL
+277744,"""springfield missouri usa""",NULL
+277746,"""valencia california usa""","""41"""
+277748,"""rimini \""n/a\"" italy""",NULL
+277752,"""baton rouge louisiana usa""","""18"""
+277753,"""evere brussels","24"""
+277756,"""baton rouge louisiana usa""","""17"""
+277759,"""baton rouge louisiana usa""","""17"""
+277761,"""yarmouth nova scotia canada""",NULL
+277764,"""baton rouge louisiana usa""","""18"""
+277765,"""gonzales louisiana usa""","""18"""
+277767,"""kiel schleswig-holstein germany""",NULL
+277768,"""austin texas usa""","""53"""
+277769,"""spokane washington usa""",NULL
+277774,"""plaquemine louisiana usa""","""17"""
+277775,"""baton rouge louisiana usa""","""17"""
+277776,"""baton rouge louisiana usa""","""17"""
+277777,"""baton rouge louisiana usa""","""17"""
+277778,"""baton rouge louisiana usa""","""17"""
+277779,"""baton rouge louisiana usa""","""17"""
+277781,"""baton rouge louisiana usa""","""16"""
+277782,"""baton rouge louisiana usa""","""17"""
+277783,"""baton rouge louisiana usa""","""17"""
+277784,"""baton rouge louisiana usa""","""17"""
+277786,"""langley british columbia canada""",NULL
+277787,"""baton rouge louisiana usa""","""17"""
+277788,"""baton rouge louisiana usa""","""17"""
+277790,"""baton rouge louisiana usa""","""17"""
+277791,"""baton rouge louisiana usa""","""17"""
+277793,"""baton rouge louisiana usa""","""17"""
+277794,"""edmonton alberta canada""",NULL
+277795,"""zachary louisiana usa""","""17"""
+277797,"""baton rouge louisiana usa""","""17"""
+277798,"""baton rouge louisiana usa""","""17"""
+277799,"""baton rouge louisiana usa""","""17"""
+277800,"""baton rouge louisiana usa""","""16"""
+277801,"""baton rouge louisiana usa""","""17"""
+277802,"""baton rouge louisiana usa""","""17"""
+277803,"""baton rouge louisiana usa""","""17"""
+277807,"""fort dodge iowa usa""",NULL
+277808,"""baton rouge louisiana usa""","""16"""
+277809,"""port allen louisiana usa""","""16"""
+277811,"""baton rouge louisiana usa""","""15"""
+277812,"""baton rouge louisiana usa""","""16"""
+277813,"""baton rouge louisiana usa""","""16"""
+277814,"""baton rouge louisiana usa""","""16"""
+277816,"""baton rouge louisiana usa""","""16"""
+277817,"""baton rouge louisiana usa""","""16"""
+277818,"""baton rouge louisiana usa""","""16"""
+277819,"""prairieville louisiana usa""","""16"""
+277820,"""baton rouge louisiana usa""","""16"""
+277823,"""baker louisiana usa""","""15"""
+277824,"""baton rouge louisiana usa""","""16"""
+277825,"""baton rouge louisiana usa""","""16"""
+277826,"""baton rouge louisiana usa""","""16"""
+277827,"""baton rouge louisiana usa""","""17"""
+277828,"""baton rouge louisiana usa""","""16"""
+277830,"""baton rouge louisiana usa""","""16"""
+277831,"""baton rouge louisiana usa""","""16"""
+277832,"""baton rouge louisiana usa""","""16"""
+277833,"""baton rouge louisiana usa""","""16"""
+277834,"""baton rouge louisiana usa""","""17"""
+277835,"""baton rouge louisiana usa""","""16"""
+277837,"""prairieville louisiana usa""","""17"""
+277838,"""baton rouge louisiana usa""","""15"""
+277840,"""baton rouge louisiana usa""","""16"""
+277841,"""baton rouge louisiana usa""","""16"""
+277842,"""baton rouge louisiana usa""","""16"""
+277843,"""baton rouge louisiana usa""","""16"""
+277844,"""baton rouge louisiana usa""","""16"""
+277845,"""wellington wellington new zealand""",NULL
+277847,"""qualicum beach british columbia canada""","""56"""
+277853,"""perth western australia australia""","""33"""
+277856,"""aveiro aveiro","22"""
+277862,"""monza lombardia italy""",NULL
+277864,"""hershey pennsylvania usa""",NULL
+277867,"""vitoria louisiana sudan""","""29"""
+277872,"""venice california usa""","""44"""
+277873,"""honolulu hawaii usa""",NULL
+277877,"""calgary alberta canada""",NULL
+277879,"""st. thomas ontario canada""","""40"""
+277882,"""stuttgart baden-wuerttemberg germany""","""36"""
+277884,"""london england united kingdom""","""29"""
+277888,"""encinitas california usa""",NULL
+277891,"""virginia beach virginia usa""",NULL
+277892,"""loveland colorado usa""","""52"""
+277894,"""lincoln nebraska usa""",NULL
+277895,"""san jose california usa""",NULL
+277898,"""rolesville north carolina usa""","""34"""
+277901,"""bath pennsylvania usa""","""40"""
+277903,"""greensboro north carolina usa""","""35"""
+277904,"""calgary alberta canada""",NULL
+277908,"""new orleans louisiana usa""",NULL
+277909,"""phoenix arizona usa""","""2"""
+277911,"""susquehanna pennsylvania usa""","""51"""
+277913,"""cocolalla idaho usa""","""52"""
+277915,"""san francisco california usa""",NULL
+277918,"""apex north carolina usa""",NULL
+277919,"""rancho palos verdes california usa""",NULL
+277921,"""bradenton florida usa""",NULL
+277922,"""st. louis missouri usa""","""26"""
+277923,"""oakland california usa""",NULL
+277928,"""grand rapids michigan usa""","""45"""
+277929,"""winnipeg manitoba canada""","""34"""
+277930,"""otsego michigan usa""",NULL
+277932,"""attleboro massachusetts usa""",NULL
+277934,"""newport kentucky usa""",NULL
+277937,"""hemet california usa""","""40"""
+277938,"""altoona iowa usa""","""63"""
+277941,"""dublin n/a ireland""","""30"""
+277945,"""webster groves missouri usa""",NULL
+277946,"""sandhurst berkshire united kingdom""",NULL
+277947,"""auckland auckland new zealand""","""13"""
+277953,"""yakima washington usa""",NULL
+277954,"""philadelphia pennsylvania usa""","""30"""
+277958,"""north royalton ohio usa""","""60"""
+277959,"""st. joseph michigan usa""","""28"""
+277962,"""victoria british columbia canada""",NULL
+277964,"""ofallon missouri usa""",NULL
+277965,"""chula vista california usa""",NULL
+277969,"""alexandria virginia usa""","""55"""
+277975,"""everett washington usa""","""64"""
+277978,"""portland oregon usa""",NULL
+277982,"""denver colorado usa""",NULL
+277984,"""hutchinson minnesota usa""",NULL
+277987,"""sunnyvale california usa""","""56"""
+277988,"""charlottesville virginia usa""","""44"""
+277989,"""walker  usa""","""39"""
+277992,"""mt lawley western australia australia""","""26"""
+277993,"""auckland auckland new zealand""",NULL
+277996,"""tappen british columbia canada""","""59"""
+277997,"""sunnyvale callif usa""",NULL
+277998,"""cary north carolina usa""",NULL
+278002,"""cartersville georgia usa""",NULL
+278004,"""auckland n/a new zealand""","""50"""
+278007,"""macomb illinois usa""","""30"""
+278008,"""jacksonville florida usa""","""50"""
+278009,"""hilversum noord-holland netherlands""","""31"""
+278012,"""the hague zuid-holland","31"""
+278013,"""phila pennsylvania usa""","""55"""
+278014,"""portland oregon usa""",NULL
+278017,"""st. joachim ontario canada""",NULL
+278019,"""chateauguay quebec canada""","""37"""
+278020,"""christchurch canterbury new zealand""","""51"""
+278021,"""san francisco california usa""",NULL
+278022,"""olympia washington usa""","""15"""
+278023,"""wilmington delaware usa""",NULL
+278024,"""merritt island florida usa""","""67"""
+278026,"""east orange new jersey usa""","""56"""
+278030,"""charlotte north carolina usa""","""39"""
+278034,"""abbots langley england united kingdom""",NULL
+278036,"""hove england united kingdom""","""37"""
+278043,"""gilching bayern germany""","""35"""
+278044,"""yaphank new york usa""",NULL
+278048,"""hillsboro ",NULL
+278054,"""verona veneto italy""","""40"""
+278056,"""wichita ",NULL
+278057,"""toronto ontario canada""",NULL
+278058,"""mississauga ontario canada""","""22"""
+278063,"""grosse tete louisiana usa""","""18"""
+278064,"""walsall west midlands united kingdom""","""54"""
+278065,"""tucson arizona usa""","""26"""
+278066,"""lower burrell pennsylvania usa""","""29"""
+278069,"""canberra australian capital territory australia""",NULL
+278070,"""idenheim rheinland-pfalz germany""","""26"""
+278074,"""the woodlands texas usa""",NULL
+278075,"""coos bay oregon usa""","""62"""
+278079,"""vista california usa""","""52"""
+278085,"""burnsville minnesota usa""","""27"""
+278089,"""valdese north carolina usa""",NULL
+278092,"""vitoria alava spain""","""31"""
+278094,"""new york new york usa""","""50"""
+278095,"""las cruces new mexico usa""","""33"""
+278096,"""belle isle florida usa""","""57"""
+278097,"""roma lazio italy""",NULL
+278098,"""largo florida usa""","""18"""
+278100,"""parma ohio usa""","""50"""
+278104,"""st. louis missouri usa""",NULL
+278106,"""west carrollton ohio usa""",NULL
+278107,"""kentville nova scotia canada""","""51"""
+278110,"""peterborough ontario canada""","""35"""
+278111,"""grand rapids michigan usa""","""33"""
+278112,"""middleburg hts  usa""","""70"""
+278117,"""portland maine usa""",NULL
+278119,"""cincinnati ohio usa""","""50"""
+278120,"""woodstock ontario canada""",NULL
+278122,"""calgary alberta canada""",NULL
+278126,"""valldoreix barcelona spain""","""17"""
+278130,"""bologna italy italy""",NULL
+278131,"""brentwood tennessee usa""",NULL
+278137,"""san antonio texas usa""","""27"""
+278139,"""westerstede  germany""",NULL
+278140,"""walnut creek california usa""",NULL
+278144,"""storm lake iowa usa""","""48"""
+278148,"""ottawa ontario canada""",NULL
+278149,"""st. charles missouri usa""","""35"""
+278153,"""cape canaveralf florida usa""","""61"""
+278155,"""toronto ontario canada""",NULL
+278156,"""whitefish montana usa""",NULL
+278158,"""cambridge massachusetts usa""",NULL
+278159,"""corolla north carolina usa""",NULL
+278160,"""greenbrae california usa""",NULL
+278161,"""edgewood washington usa""",NULL
+278162,"""pittsburgh pennsylvania usa""",NULL
+278167,"""st. clair shores michigan usa""",NULL
+278168,"""sheffield england united kingdom""","""39"""
+278172,"""burnaby british columbia canada""",NULL
+278176,"""medan su indonesia""","""21"""
+278177,"""hatfield pennsylvania usa""","""24"""
+278181,"""albuquerque new mexico usa""",NULL
+278183,"""el dorado kansas usa""",NULL
+278184,"""newark delaware usa""","""50"""
+278185,"""pendleton oregon usa""","""35"""
+278188,"""lake george new york usa""","""34"""
+278193,"""offenbach hessen germany""","""41"""
+278194,"""aptos california usa""",NULL
+278197,"""kennesaw georgia usa""",NULL
+278199,"""houston texas usa""","""48"""
+278200,"""cleveland ohio usa""","""62"""
+278202,"""coral springs florida usa""",NULL
+278203,"""richmond virginia usa""","""38"""
+278204,"""madrid madrid spain""","""18"""
+278206,"""christchurch canterbury new zealand""","""37"""
+278207,"""st peters missouri usa""",NULL
+278209,"""philadelphia pennsylvania usa""","""57"""
+278212,"""chicago illinois usa""","""33"""
+278213,"""philadelphia pennsylvania usa""",NULL
+278215,"""nelson motueka nz new zealand""","""28"""
+278216,"""san jose california usa""","""52"""
+278218,"""canberra australian capital territory australia""","""37"""
+278220,"""vancouver british columbia canada""",NULL
+278221,"""oshawa ontario canada""","""32"""
+278224,"""berkeley california usa""",NULL
+278227,"""miami florida usa""",NULL
+278229,"""calgary alberta canada""",NULL
+278235,"""almeria n/a spain""","""27"""
+278237,"""barcelona lisboa portugal""","""25"""
+278238,"""waunakee wisconsin usa""","""45"""
+278242,"""shanghai shanghai china""","""26"""
+278243,"""glen ellyn illinois usa""","""46"""
+278244,"""grandville michigan usa""",NULL
+278245,"""wetzikon zürich switzerland""","""44"""
+278246,"""cary north carolina usa""",NULL
+278248,"""na manitoba canada""",NULL
+278249,"""heidelberg baden-württemberg",NULL
+278250,"""louisville kentucky usa""",NULL
+278251,"""lockport new york usa""","""45"""
+278253,"""san antonio texas usa""","""49"""
+278254,"""brisol pennsylvania usa""","""26"""
+278255,"""robesonia pennsylvania usa""","""34"""
+278257,"""new orleans louisiana usa""","""41"""
+278259,"""chesapeake virginia usa""","""37"""
+278260,"""burlington massachusetts usa""",NULL
+278263,"""acworth georgia usa""","""34"""
+278264,"""madrid comunidad de madrid spain""","""55"""
+278270,"""wichita falls texas usa""","""63"""
+278274,"""south pasadena california usa""","""50"""
+278279,"""southend england united kingdom""","""18"""
+278280,"""freiburg baden-wuerttemberg germany""",NULL
+278297,"""bogart georgia usa""",NULL
+278300,"""dallas texas usa""",NULL
+278302,"""düsseldorf nordrhein-westfalen germany""","""104"""
+278307,"""etobicoke ontario canada""","""51"""
+278310,"""san luis new york argentina""","""18"""
+278311,"""vancouver washington usa""",NULL
+278313,"""valladolid castilla y león italy""","""31"""
+278314,"""norfolk virginia usa""",NULL
+278316,"""melbourne victoria australia""","""41"""
+278319,"""agawam massachusetts usa""","""64"""
+278325,"""arlington texas usa""","""59"""
+278328,"""miami oklahoma usa""",NULL
+278330,"""livonia new york usa""","""46"""
+278332,"""nijmegen gelderland netherlands""",NULL
+278333,"""yakima washington usa""",NULL
+278334,"""22 australian capital territory australia""",NULL
+278336,"""new paltz new york usa""",NULL
+278342,"""st. john`s newfoundland canada""",NULL
+278345,"""benton arkansas usa""","""49"""
+278346,"""palmdale california usa""",NULL
+278350,"""niwot colorado usa""","""52"""
+278355,"""fridley minnesota usa""","""33"""
+278356,"""lakeland tennessee usa""","""57"""
+278357,"""hamilton ontario canada""",NULL
+278358,"""omaha nebraska usa""","""36"""
+278361,"""ottawa ontario canada""","""28"""
+278364,"""columbus ohio usa""","""26"""
+278365,"""thousand oaks ",NULL
+278368,"""new york new york usa""",NULL
+278373,"""dubbo new south wales australia""","""13"""
+278376,"""danville pennsylvania usa""","""54"""
+278377,"""las vegas nevada usa""",NULL
+278378,"""los angeles california usa""","""25"""
+278388,"""seattle washington usa""","""51"""
+278389,"""newcastle new south wales australia""","""43"""
+278390,"""elburn illinois usa""","""35"""
+278394,"""lousiville kentucky usa""","""20"""
+278396,"""corona california usa""",NULL
+278398,"""sydney new south wales australia""","""49"""
+278400,"""west bend wisconsin usa""","""41"""
+278401,"""zürich zürich switzerland""","""25"""
+278407,"""venezia veneto italy""","""39"""
+278409,"""red deer alberta canada""",NULL
+278411,"""stratford texas usa""","""54"""
+278413,"""kansas city missouri usa""","""76"""
+278418,"""omaha nebraska usa""",NULL
+278419,"""glen ellyn illinois usa""",NULL
+278422,"""new york new york usa""","""32"""
+278423,"""milano lombardia italy""","""38"""
+278425,"""póvoa de lanhoso minho portugal""","""12"""
+278430,"""melbourne victoria australia""","""48"""
+278431,"""alexandria virginia usa""","""39"""
+278432,"""east meadow new york usa""",NULL
+278435,"""innsbruck tirol austria""","""23"""
+278439,"""brescia ","24"""
+278444,"""thornhill ontario canada""","""51"""
+278446,"""fallon nevada usa""","""49"""
+278449,"""bartlett tennessee usa""",NULL
+278450,"""florissant missouri usa""",NULL
+278452,"""albuquerque new mexico usa""",NULL
+278458,"""saskatoon saskatchewan canada""","""31"""
+278459,"""chicago illinois usa""","""28"""
+278461,"""colquitt georgia usa""","""16"""
+278462,"""tucson arizona usa""","""40"""
+278465,"""woodbridge virginia usa""","""27"""
+278466,"""new york new york usa""","""22"""
+278469,"""naples florida usa""","""57"""
+278474,"""croydon new south wales australia""","""40"""
+278475,"""spring texas usa""",NULL
+278479,"""los angeles california usa""",NULL
+278483,"""indianapolis indiana usa""",NULL
+278487,"""visalia california usa""",NULL
+278488,"""santa maria california usa""","""42"""
+278490,"""southfield michigan usa""",NULL
+278491,"""surprise arizona usa""","""43"""
+278492,"""madrid madrid spain""","""29"""
+278500,"""rochester hills michigan usa""",NULL
+278501,"""boston massachusetts usa""",NULL
+278503,"""houston texas usa""",NULL
+278506,"""springfield virginia usa""",NULL
+278510,"""vancouver british columbia canada""",NULL
+278512,"""hillsdale michigan usa""",NULL
+278514,"""sandusky ohio usa""","""60"""
+278515,"""northampton n/a united kingdom""",NULL
+278520,"""princeton-by-the-sea california usa""",NULL
+278522,"""orange beach alabama usa""",NULL
+278524,"""kansas city ","10"""
+278525,"""gardiner maine usa""","""12"""
+278528,"""cleveland oklahoma usa""","""45"""
+278529,"""boulder city nevada usa""",NULL
+278531,"""johnson city tennessee usa""","""45"""
+278533,"""pleasanton california usa""",NULL
+278534,"""douglassville pennsylvania usa""",NULL
+278535,"""oshkosh wisconsin usa""",NULL
+278536,"""st. louis missouri usa""",NULL
+278537,"""friendswood texas usa""","""29"""
+278538,"""griswold iowa usa""","""33"""
+278539,"""melbourne victoria australia""",NULL
+278540,"""boone iowa usa""","""26"""
+278541,"""ottawa ontario canada""",NULL
+278542,"""greeneville tennessee usa""","""39"""
+278543,"""valenica california usa""","""39"""
+278545,"""cottonwood california usa""",NULL
+278550,"""aurora illinois usa""","""30"""
+278551,"""bad honnef nordrhein-westfalen germany""","""21"""
+278552,"""royal oak michigan usa""","""26"""
+278554,"""takasaki gunma japan""","""22"""
+278556,"""yellowknife northwest territories canada""",NULL
+278559,"""zaandijk the netherlands netherlands""","""24"""
+278561,"""merrimack new hampshire usa""",NULL
+278563,"""wien wien austria""","""37"""
+278565,"""pikesville maryland usa""",NULL
+278568,"""burlington ontario canada""",NULL
+278569,"""ann arbor ",NULL
+278571,"""albacete albacete spain""","""28"""
+278573,"""alexandria virginia usa""","""38"""
+278582,"""slidell louisiana usa""",NULL
+278586,"""port orchard washington usa""","""63"""
+278588,"""fossano piemonte italy""",NULL
+278597,"""huntsville alabama usa""",NULL
+278601,"""austin texas usa""",NULL
+278606,"""capena rm italy""","""38"""
+278608,"""west vancouver british columbia canada""",NULL
+278610,"""deer park texas usa""",NULL
+278615,"""discovery bay washington usa""",NULL
+278618,"""wohlen n/a switzerland""","""37"""
+278620,"""tualatin oregon usa""","""44"""
+278621,"""victoria delaware canada""","""74"""
+278629,"""city of campltown new south wales australia""","""15"""
+278633,"""sandy utah usa""",NULL
+278634,"""dallas texas usa""",NULL
+278636,"""irvington alabama usa""",NULL
+278637,"""strasbourg alsace france""",NULL
+278641,"""l. p. alberta canada""",NULL
+278644,"""muenchen bayern germany""","""28"""
+278645,"""fountain hills arizona usa""",NULL
+278648,"""las vegas nevada usa""",NULL
+278650,"""san francisco california usa""",NULL
+278652,"""murrieta ",NULL
+278653,"""juniata nebraska usa""","""51"""
+278659,"""vancouver washington usa""","""33"""
+278663,"""arlington texas usa""",NULL
+278665,"""frankfurt am main hessen germany""",NULL
+278668,"""madrid madrid spain""","""48"""
+278669,"""spring hill fl hernando""","""13"""
+278670,"""clarkdale arizona usa""","""33"""
+278671,"""bremen n/a germany""",NULL
+278672,"""halifax nova scotia canada""","""43"""
+278675,"""paris paris france""","""28"""
+278681,"""downers grove illinois usa""",NULL
+278683,"""fort worth texas usa""","""27"""
+278688,"""rome lazio italy""","""37"""
+278691,"""vigo spain spain""","""33"""
+278692,"""butler western australia australia""","""26"""
+278694,"""montgomery alabama usa""","""57"""
+278698,"""pasadena maryland",NULL
+278710,"""gibsonia pennsylvania usa""","""58"""
+278713,"""albuquerque new mexico usa""","""63"""
+278714,"""silverton oregon usa""",NULL
+278715,"""college station texas usa""","""44"""
+278720,"""wiesloch baden-württemberg germany""","""31"""
+278721,"""kamen nordrhein-westfalen germany""","""44"""
+278723,"""prior lake minnesota usa""","""52"""
+278724,"""el paso texas united kingdom""","""54"""
+278729,"""großostheim bayern germany""","""15"""
+278731,"""stuttgart baden-württemberg germany""",NULL
+278732,"""victoria british columbia canada""",NULL
+278740,"""pottstown pennsylvania usa""",NULL
+278747,"""sundsvall västernorrland sweden""","""20"""
+278750,"""sylmar california usa""",NULL
+278752,"""london nova scotia canada""","""9"""
+278755,"""herkimer alaska mexico""","""18"""
+278759,"""new bern north carolina usa""",NULL
+278760,"""jax florida usa""",NULL
+278764,"""herzerock-clarholz nrw germany""",NULL
+278766,"""melbourne victoria australia""","""15"""
+278767,"""dallas texas usa""",NULL
+278769,"""san marcos california usa""",NULL
+278771,"""milford connecticut usa""",NULL
+278772,"""venice florida usa""",NULL
+278773,"""alexandria virginia usa""",NULL
+278774,"""london n/a united kingdom""","""33"""
+278777,"""overland park kansas",NULL
+278778,"""köln nordrhein-westfalen germany""","""42"""
+278781,"""lincolnton north carolina usa""","""54"""
+278782,"""larnaca n/a cyprus""",NULL
+278784,"""vancouver british columbia canada""",NULL
+278786,"""st. catharines ontario canada""",NULL
+278788,"""zuerich n/a switzerland""",NULL
+278789,"""new york new york usa""","""31"""
+278795,"""santa pola alicante spain""","""35"""
+278796,"""baxter springs kansas usa""","""34"""
+278798,"""stayton oregon usa""","""39"""
+278799,"""hamburg germany germany""",NULL
+278800,"""canyon country california usa""","""45"""
+278806,"""la jolla california usa""",NULL
+278807,"""pollock pines california usa""","""66"""
+278813,"""phoenix arizona usa""",NULL
+278815,"""portland oregon usa""","""56"""
+278818,"""allentown pennsylvania usa""","""15"""
+278819,"""surfside beach texas usa""","""32"""
+278820,"""ninety six south carolina usa""","""59"""
+278823,"""new westminster british columbia canada""",NULL
+278824,"""madison new jersey usa""","""41"""
+278825,"""portland oregon usa""",NULL
+278828,"""germantown illinois usa""",NULL
+278831,"""anchorage alaska usa""",NULL
+278832,"""new smyrna beach florida usa""","""62"""
+278836,"""des moines washington usa""","""47"""
+278838,"""massillon ohio usa""","""15"""
+278843,"""pismo beach california usa""","""28"""
+278844,"""st. paul minnesota usa""","""28"""
+278846,"""toronto ontario canada""","""23"""
+278849,"""georgetown ontario canada""","""23"""
+278851,"""dallas texas usa""","""33"""
+278852,"""brisbane queensland australia""","""32"""
+278854,"""portland oregon usa""",NULL
