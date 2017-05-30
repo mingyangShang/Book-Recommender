@@ -43,6 +43,13 @@
     zoom: 1;
     margin-right: -1px;
 }
+.site-nav-bd .menu-avatar img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: -10px;
+}
+
 .site-nav-home .site-nav-bd .menu .menu-hd a{
     color: #666;
 }

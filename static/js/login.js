@@ -6,6 +6,10 @@ $(document).ready(function(){
    $("#signin_link").click(switchToSignin);
    $("#signup_div .sign-button.submit").click(signup);
    $("#signin_div .sign-button.submit").click(signin);
+   if(window.location.hash=='#signin')
+   {
+       switchToSignin();
+   }
 });
 
 function switchToSignup(){

@@ -4,10 +4,10 @@
     <div>
         <div id="SiteNav" class="site-nav site-nav-home">
             <div id="SiteNavBd" class="site-nav-bd">
-                <ul id="SiteNavBdR" class="site-nav-bd-r not-login">
+                <ul id="SiteNavBdR" class="site-nav-bd-r not-login" style="display:None;">
                     <li class="menu menu-reg">
                         <div id="MenuRegHd" class="menu-hd">
-                            <a href="/user/starkshang" target="_top">Register</a>
+                            <a href="/login#signup" target="_top">Register</a>
                         </div>
                     </li>
                     <li class="site-nav-pipe">
@@ -15,16 +15,43 @@
                     </li>
                     <li class="menu menu-login">
                         <div id="MenuLoginHd" class="menu-hd" >
-                            <a href="/login" target="_top">Login</a>
+                            <a href="/login#signin" target="_top">Login</a>
                         </div>
                     </li>
                 </ul>
-                <!--<ul class="site-nav-bd-r logined">-->
-                    <!--<li class="menu menu-name">-->
-                        <!--<a href="/user/starkshang" target="_top">Starkshang</a>-->
-                    <!--</li>-->
-                <!--</ul>-->
+                <ul id="SiteNavLogined" class="site-nav-bd-r logined">
+                    <li class="menu menu-avatar">
+                        <div class="menu-hd">
+                            <a href="/user/starkshang">
+                                <img id="avatar" src="{{ url_for('static', filename='images/default_avatar.png') }}" target="_top"/>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="menu menu-name">
+                        <div class="menu-hd">
+                            <a id="username" href="/user/starkshang" target="_top">Starkshang</a>
+                        </div>
+                    </li>
+                    <li class="site-nav-pipe">
+                        <span class="site-nav-pipe-line">|</span>
+                    </li>
+                    <li class="menu menu-logout">
+                        <div id="logout" class="menu-hd">
+                            <a href="/login#signin" target="_top">Logout</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 {% endblock %}
+<script>
+    if($.cookie('user')){
+        $("#SiteNavBdR").css('display', 'None');
+        $("#SiteNavLogined").css('display', 'Block');
+        $("#SiteNavLogined #username").text($.cookie('user'));
+    }else{
+        $("#SiteNavBdR").css('display', 'Block');
+        $("#SiteNavLogined").css('display', 'None');
+    }
+</script>
