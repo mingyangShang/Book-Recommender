@@ -2560,7 +2560,7 @@ html.modal-open.no-flexbox .modal-wrapper .mutiview-dialog {
 }
 
 .sign-flow .sign-button {
-    background: #0f88eb;
+    background: #545652;
     box-shadow: none;
     border: 0;
     border-radius: 3px;
@@ -2763,7 +2763,7 @@ html.no-touchevents .sign-flow .social-signup-wrapper a:hover {
     margin: 0 .8em;
     width: 2.4em;
     height: 2px;
-    background: #0f88eb;
+    background: #545652;
     -webkit-transition: left .15s ease-in;
     transition: left .15s ease-in
 }
@@ -2792,7 +2792,7 @@ html.no-touchevents .index-tab-navs a:hover {
 .index-tab-navs a.active {
     opacity: 1;
     -ms-filter: "alpha(Opacity=100)";
-    color: #0f88eb
+    color: #545652
 }
 
 .QRCode {
