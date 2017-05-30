@@ -11,7 +11,8 @@ def index():
 
 @app.route('/books/<bookname>/')
 def book_info(bookname):
-    return render_template('bookpage.html', book=Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1"))
+    return render_template('bookpage.html', book=Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1"),
+                           interested_books = [Book("Book2", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn2", "author2", "2")] * 10)
 
 @app.route('/user/<username>/')
 def user_info(username):

@@ -3,4 +3,66 @@
 
 {% block content %}
     {% include 'book.html' %}
+    <script>
+        $("#avatar").css('margin-top', '0px');
+    </script>
+    <!--<div class="right" css="width:1000px">-->
+        <!--<div class="block5">-->
+            <!--<h2 class>-->
+                <!--<span class>Maybe Interested</span>-->
+                <!--<span class="link-more">-->
+                    <!--<a class href="#">more»</a>-->
+                <!--</span>-->
+            <!--</h2>-->
+            <!--<div class="clearfix content s" id="book_rec">-->
+                <!--<ul class="list-col list-col5 list-express slide-item">-->
+                    <!--{% for book in interested_books %}-->
+                        <!--<li>-->
+                            <!--<div class="cover">-->
+                                <!--<a href="/books/{{book.name}}" title="book-info">-->
+                                    <!--<img src="{{book.cover}}" width="80px" />-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="info">-->
+                                <!--<div class="title">-->
+                                    <!--<a class href="/books/{{book.name}}" title="book-title">{{book.name}}</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    <!--{% endfor %}-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 {% endblock %}
+
+<!--{% block interest %}-->
+    <!--<div class="right">-->
+        <!--<div class="block5">-->
+            <!--<h2 class>-->
+                <!--<span class>Maybe Interested</span>-->
+                <!--<span class="link-more">-->
+                    <!--<a class href="#">more»</a>-->
+                <!--</span>-->
+            <!--</h2>-->
+            <!--<div class="clearfix content s" id="book_rec">-->
+                <!--<ul class="list-col list-col5 list-express slide-item">-->
+                    <!--{% for book in interested_books %}-->
+                        <!--<li>-->
+                            <!--<div class="cover">-->
+                                <!--<a href="/books/{{book.name}}" title="book-info">-->
+                                    <!--<img src="{{book.cover}}" width="80px" />-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="info">-->
+                                <!--<div class="title">-->
+                                    <!--<a class href="/books/{{book.name}}" title="book-title">{{book.name}}</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    <!--{% endfor %}-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--{% endblock %}-->

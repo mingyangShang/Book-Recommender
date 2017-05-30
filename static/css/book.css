@@ -174,3 +174,35 @@ a.behaviour{
 #interest_sectl .rating_self .rating_sum {
     clear: both;
 }
+
+.right{
+    float: right;
+    width: 310px;
+}
+.right .block5{
+    margin-bottom: 20px;
+}
+.books-express .list-express .cover {
+    width: 106px;
+    height: 158px;
+    margin-bottom: 7px;
+    overflow: hidden;
+}
+.list-col5 .title {
+    display: block;
+    font-size: 12px;
+}
+.list-col li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+}
+.right .block5 h4{
+    margin-bottom: 5px;
+}
+.right .block5 .cover img{
+    width: 80px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
