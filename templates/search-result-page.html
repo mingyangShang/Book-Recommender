@@ -5,4 +5,52 @@
        $(".bd .hd h2 span[class='title']").text('Search Result');
     });
 </script>
-{% extends 'index.html' %}
+<style type="text/css">
+    .page-bar{
+        width: 800px;
+        margin:auto;
+    }
+    .page-bar .page-op{
+        float: right;
+        display: block;
+        margin-right: 40px;
+    }
+    .page-bar .page-op button{
+        background: #545652;
+        box-shadow: none;
+        border: 0;
+        border-radius: 3px;
+        border-color:  #545652;
+        line-height: 41px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: 6px;
+        color: white;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/common.css') }}">
+<script src="{{ url_for('static', filename='js/url.js') }}"></script>
+<script src="{{ url_for('static', filename='js/userop.js') }}"></script>
+{% extends 'layout.html' %}
+{% block content %}
+    <!--<div class="hd">-->
+        <!--<h2 class>-->
+            <!--<span class>Recommend</span>-->
+            <!--<span class="link-more">-->
+                <!--<a class href="#">more»</a>-->
+            <!--</span>-->
+        <!--</h2>-->
+    <!--</div>-->
+    {% include 'books.html' %}
+    <div class="page-bar">
+        <div class="page-op">
+            <button id="pre_page" class="prev">Prev</button>
+            <button id="next_page" class="next">Next</button>
+        </div>
+    </div>
+{% endblock %}
+
+
+
