@@ -3,6 +3,7 @@
 
 import MySQLdb;
 from operator import itemgetter;
+from model.model import Book
 
 # 根据ISBN号(book_id)查找书籍
 # 根据书名(title)查找书籍
@@ -226,6 +227,31 @@ def main():
 	print best_book_list;
 
 	MysqlClose(conn,cursor,flag);
+
+def search(key):
+	books = []
+	return books
+
+def recommend_item(books):
+	"""
+	:param books:list,
+	:return list
+	"""
+	return [Book()] * 10
+
+def recommend_books(user):
+	"""
+	:param user
+	:return list
+	"""
+	return [Book()] * 10
+
+def popular_books(k):
+	"""
+	:param k(int):number of books
+	:return books(list)
+	"""
+	return [Book()] * 10
 
 if __name__ == '__main__':
 	main();

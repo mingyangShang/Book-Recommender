@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, session, make_response, json
 
 from model.model import Book
+import utils
 
 app = Flask(__name__)
 
@@ -26,7 +27,8 @@ def login():
 def search():
     print 'search:', request.args
     if request.method == 'GET':
-        request.args['search_text']
+        search_key = request.args['search_text']
+        books = utils.search(search_key)
         return render_template('search-result-page.html', books=[Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10)
 
 
