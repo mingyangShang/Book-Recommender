@@ -60,4 +60,5 @@ class book_spider(scrapy.Spider):
                 item["price"] = datas[datas.index(data)+1]
             elif u"ISBN:" in data:
                 item["ISBN"] = datas[datas.index(data)+1]
+        print item
         return item
