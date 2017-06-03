@@ -5,7 +5,8 @@
 {% block book_info %}
     <div id="wrapper">
         <h1>
-            <span>{{ book.name }}</span>
+            <span id="book_name">{{ book.name }}</span>
+            <span id="book_id" style="display: none;">{{ book.isbn }}</span>
             <div class="clear"></div>
         </h1>
         <div id="content">

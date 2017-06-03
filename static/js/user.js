@@ -3,4 +3,5 @@
  */
 $(document).ready(function () {
     $(".bd .hd h2 span[class='title']").text('History');
+    $("#info_name").text($.cookie('user'));
 });
