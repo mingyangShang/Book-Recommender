@@ -22,7 +22,7 @@
                 <ul id="SiteNavLogined" class="site-nav-bd-r logined">
                     <li class="menu menu-avatar">
                         <div class="menu-hd">
-                            <a href="/user/starkshang">
+                            <a id="avatar_link" href="/user/starkshang">
                                 <img id="avatar" src="{{ url_for('static', filename='images/default_avatar.png') }}" target="_top"/>
                             </a>
                         </div>
@@ -50,6 +50,11 @@
         $("#SiteNavBdR").css('display', 'None');
         $("#SiteNavLogined").css('display', 'Block');
         $("#SiteNavLogined #username").text($.cookie('user'));
+        $("#avatar_link").attr('href', '/user/'+$.cookie('user'));
+        $("#username").attr("href", "/user/"+$.cookie("user"));
+        $("#logout a").click(function () {
+            $.removeCookie('user', { path: '/' });
+        });
     }else{
         $("#SiteNavBdR").css('display', 'Block');
         $("#SiteNavLogined").css('display', 'None');

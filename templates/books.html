@@ -18,13 +18,13 @@
                             {% for book in books %}
                                 <li>
                                     <div class="cover">
-                                        <a href="/books/{{book.name}}" title="book-info">
+                                        <a href="/books/{{book.isbn}}" title="book-info">
                                             <img src="{{book.cover}}" width="200px" height="150px" />
                                         </a>
                                     </div>
                                     <div class="info">
                                         <div class="title">
-                                            <a class href="/books/{{book.name}}" title="book-title">{{book.name}}</a>
+                                            <a class href="/books/{{book.isbn}}" title="book-title">{{book.name}}</a>
                                         </div>
                                         <div class="author">
                                             {{book.author}}

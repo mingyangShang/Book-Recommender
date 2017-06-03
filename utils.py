@@ -147,6 +147,9 @@ def register(name, passwd, age, location):
 def login(name, passwd):
 	return User() # TODO parameter
 
+def userinfo(name):
+	return User() # TODO parameter
+
 
 
 # 根据ISBN号、书名、作者查找书籍
@@ -168,7 +171,7 @@ def recommend_item(books):
 	:param books:list,
 	:return list
 	"""
-	return [Book()] * 10
+	return [Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10
 
 def recommend_books(user_id,book_id):
 	"""
@@ -235,6 +238,12 @@ def popular_books(k):
 		books.append(book);
 	mysqlclose(conn,flag);
 	return books;
+
+def buy_book(user_id, book_id):
+	return True
+
+def bookinfo(book_id):
+	return Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")
 
 if __name__ == '__main__':
 	main();

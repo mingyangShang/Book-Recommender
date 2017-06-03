@@ -5,13 +5,31 @@ $(document).ready(function(){
    $("#buy").click(buy);
     $("#pre_page").click(prepage);
     $("#next_page").click(nextpage);
+    
 
 });
 
 function buy(){
     if($('#buy').text() == 'Buy'){
-        alert('Buy succeed!')
-        $("#buy").text('Buyed')
+        $.ajax({
+            url: '/buy/book/'+$("#book_id").text(),
+            type: 'POST',
+            dataType: 'text',
+            data: "",
+            success: function (data) {
+                data = $.parseJSON(data);
+                if (data.result == -1) {
+                    alert(data.error);
+                } else if (data.result == 1) {
+                    alert(data.msg);
+                    $("#buy").text('Buyed');
+                }
+            },
+            error: function (request) {
+                alert(request.error);
+            }
+        });
+
     }
 }
 

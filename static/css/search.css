@@ -3,11 +3,12 @@
   #nav-book .nav-wrap {
     border-color: #e9e9e2; }
   #nav-book .nav-logo {
-    background: url(../images/nav_logo.png) no-repeat 0 12px;
+    /*background: url(../images/nav_logo.png) no-repeat 0 12px;*/
     /*background-image: -webkit-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png?s=1) 2x);*/
-    background-image: -moz-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png?s=1) 2x);
-    background-image: -ms-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png) 2x);
-    background-image: -o-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png) 2x); }
+    /*background-image: -moz-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png?s=1) 2x);*/
+    /*background-image: -ms-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png) 2x);*/
+    /*background-image: -o-image-set(url(../images/nav_logo.png) 1x, url(../images/nav_logo@2x.png) 2x); }*/
+  }
   #nav-book a:link, #nav-book a:visited {
     color: #614e3c;
     text-decoration: none; }
@@ -40,7 +41,12 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      line-height: 100em; }
+      margin-top: 15px;
+      height: 40px;
+      font-weight: bold;
+      padding: 0px;
+      margin-right: -100px;}
+      /*line-height: 100em; }*/
       .nav .nav-logo a:hover, .nav .nav-logo a:active {
         background: none !important; }
 
