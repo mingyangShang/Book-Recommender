@@ -8,7 +8,7 @@ from model.model import Book, User
 
 user_sim={};
 # 读取user_sim文件
-with open("./User_Based algorithm/user_sim.csv") as f:
+with open("/Users/smy/PycharmProjects/Book-Recommender/User_Based/user_sim.csv") as f:
 	reader=csv.reader(f);
 	for row in reader:
 		if user_sim.has_key(row[0])==False:
@@ -60,11 +60,6 @@ def main():
 	books=popular_books(5);
 	print books[0].score;
 
-	# 用户登录
-	username="lhz";
-	password="789789";
-	user=login(username,password);
-	print user.id;
 
 	# 新用户注册
 	name="lhz";
@@ -74,12 +69,20 @@ def main():
 	user=register(name,password,age,location);
 	print user.name;
 
+	# 用户登录
+	username = "lhz";
+	password = "789789";
+	user = login(username, password);
+	print user.id;
+
+def buy_book(userid, bookid):
+	return True
 
 # 建立数据库连接
 def mysqlconn():
 	conn=None;
 	try:
-		conn=MySQLdb.connect(host="localhost",user="root",passwd="199406",db="lhz",connect_timeout=10);
+		conn=MySQLdb.connect(host="localhost",user="root",passwd="password",db="lhz",connect_timeout=10);
 		flag=True;
 	except Exception,e:
 		print "Can not Connect to Mysql server";
@@ -240,3 +243,4 @@ def bookinfo(book_id):
 
 if __name__ == '__main__':
 	main();
+	print popular_books(10)

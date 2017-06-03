@@ -10,6 +10,10 @@ $(document).ready(function(){
 });
 
 function buy(){
+    if(!$.cookie('user')){
+        alert("Please login first");
+        return;
+    }
     if($('#buy').text() == 'Buy'){
         $.ajax({
             url: '/buy/book/'+$("#book_id").text(),

@@ -9,24 +9,23 @@ curr_user = User("","","","","")
 
 @app.route('/')
 def index():
-    most_popular_books = [Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10
-    # if(curr_user and curr_user.name):
-    #     recommend_books = utils.recommend_books(curr_user)
-    # else:
-    #     recommend_books = utils.popular_books(10)
-    return render_template('index.html', books=most_popular_books)
+    if(curr_user and curr_user.name):
+        recommend_books = utils.recommend_books(curr_user.id)
+    else:
+        recommend_books = utils.popular_books(12)
+    return render_template('index.html', books=recommend_books)
     # return render_template('index.html', books=most_popular_books)
 
 @app.route('/books/<bookid>/')
 def book_info(bookid):
     curr_book = utils.bookinfo(bookid)
-    interested_books = utils.recommend_item([curr_book])
-    return render_template('bookpage.html', book=Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1"),
+    # interested_books = utils.recommend_item([curr_book])
+    return render_template('bookpage.html', book=curr_book,
                            interested_books = [Book("Book2", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn2", "author2", "2")] * 10)
 
 @app.route('/user/<username>/')
 def user_info(username):
-    return render_template('userpage.html', username="starkshang", books=[Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10)
+    return render_template('userpage.html', username=curr_user.name, books=[Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10)
 
 @app.route('/login/')
 def login():
@@ -42,11 +41,22 @@ def buy(bookid):
 
 @app.route('/search/')
 def search():
-    print 'search:', request.args
     if request.method == 'GET':
         search_key = request.args['search_text']
+        if "page" in request.args:
+            page = request.args["page"]
+        else:
+            page = 1
         books = utils.search(search_key)
-        return render_template('search-result-page.html', books=[Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10)
+        if len(books) % 12 == 0:
+            max_page = len(books) // 12
+        else:
+            max_page = len(books) // 12 + 1
+        if page < max_page:
+            display_books = books[(page-1)*12, page*12]
+        else:
+            display_books = books[(min(page, max_page)-1)*12:]
+        return render_template('search-result-page.html', books=display_books)
 
 
 @app.route('/register/', methods=['POST'])
@@ -54,14 +64,24 @@ def register():
     if request.method == 'POST':
        if request.form['type'] == 'signup':
            username, userpwd = request.form['username'], request.form['password']
-           if len(username) >0 and len(userpwd) > 6:
+           user = utils.register(username, userpwd, 20, 'China')
+           if user and user.name:
                return json.dumps({"result": 1, "msg": "Register Succeed!", "content": {"username": username}})
            else:
                return json.dumps({"result":-1, "error": "invalid username or password"})
        elif request.form['type'] == 'signin':
            username, userpwd = request.form['account'], request.form['password']
-           # curr_user = utils.login(username, userpwd)
-           return json.dumps({"result": 1, "msg": "Login Succeed!", "content": {"username": username}})
+           user = utils.login(username, userpwd)
+           if user and user.name:
+               curr_user = user
+               login_succeed = True
+           else:
+               login_succeed = False
+
+           if login_succeed:
+                return json.dumps({"result": 1, "msg": "Login Succeed!", "content": {"username": username}})
+           else:
+               return json.dumps({"result": -1, "msg": "Username or password wrong!", "content": {}})
 
 @app.errorhandler(404)
 def page_not_found(error):
