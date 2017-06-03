@@ -204,6 +204,14 @@ a.behaviour{
 }
 .right .block5 .cover img{
     width: 80px;
+    height: 100px;
     margin-right: 5px;
     margin-bottom: 5px;
+}
+
+#interested .title a{
+    display: block;
+    max-height:40px;
+    max-width: 100px;
+    overflow: hidden;
 }

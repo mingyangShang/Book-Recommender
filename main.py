@@ -1,31 +1,37 @@
 from flask import Flask, render_template, request, session, make_response, json
 
 from model.model import Book, User
+import csv
 import utils
 
 app = Flask(__name__)
 
 curr_user = User("","","","","")
-
+user_sim = {}
 @app.route('/')
 def index():
     if(curr_user and curr_user.name):
-        recommend_books = utils.recommend_books(curr_user.id)
+        recommend_books = utils.recommend_books(user_sim, curr_user.id)
+        print len(recommend_books)
+        if len(recommend_books) == 0:
+            recommend_books = utils.popular_books(12)
     else:
         recommend_books = utils.popular_books(12)
     return render_template('index.html', books=recommend_books)
-    # return render_template('index.html', books=most_popular_books)
 
 @app.route('/books/<bookid>/')
 def book_info(bookid):
     curr_book = utils.bookinfo(bookid)
-    # interested_books = utils.recommend_item([curr_book])
+    interested_books = utils.recommend_books(user_sim, curr_user.id)
+    if not interested_books or len(interested_books) == 0:
+        interested_books = utils.popular_books(10)
     return render_template('bookpage.html', book=curr_book,
-                           interested_books = [Book("Book2", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn2", "author2", "2")] * 10)
+                           interested_books = interested_books)
 
 @app.route('/user/<username>/')
 def user_info(username):
-    return render_template('userpage.html', username=curr_user.name, books=[Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10)
+    buyed_books = utils.buyed_books(curr_user.id)
+    return render_template('userpage.html', username=curr_user.name, books=buyed_books)
 
 @app.route('/login/')
 def login():
@@ -73,6 +79,7 @@ def register():
            username, userpwd = request.form['account'], request.form['password']
            user = utils.login(username, userpwd)
            if user and user.name:
+               global curr_user
                curr_user = user
                login_succeed = True
            else:
@@ -87,4 +94,11 @@ def register():
 def page_not_found(error):
     return render_template('404.html'), 404
 if __name__ == '__main__':
+    global user_sim
+    with open("/Users/smy/PycharmProjects/Book-Recommender/User_Based/user_sim.csv") as f:
+        reader = csv.reader(f);
+        for row in reader:
+            if user_sim.has_key(row[0]) == False:
+                user_sim[row[0]] = {};
+            user_sim[row[0]][row[1]] = float(row[2]);
     app.run()

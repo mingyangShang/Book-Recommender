@@ -1,6 +1,7 @@
 <title>{{ book.name }}</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/book.css') }}">
 <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.cookie.js') }}"></script>
 <script src="{{ url_for('static', filename='js/userop.js') }}"></script>
 {% block book_info %}
     <div id="wrapper">

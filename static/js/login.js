@@ -41,7 +41,6 @@ function signup() {
                 if (data.result == -1) {
                     alert(data.error);
                 } else if (data.result == 1) {
-                    alert(data.msg);
                     //to login
                     switchToSignin();
                     $('#signin-form input[name="account"]').val(data.content.username);
@@ -49,7 +48,6 @@ function signup() {
                 }
             },
             error: function (request) {
-                alert('error');
                 alert(request.error);
             }
         });
@@ -69,7 +67,6 @@ function signin() {
                 if (data.result == -1) {
                     alert(data.error);
                 } else if (data.result == 1) {
-                    alert(data.msg);
                     $.cookie('logined', true, {expires: 7, path: '/'});
                     $.cookie('user', data.content.username, {expires: 7, path: '/'});
                     window.location.replace('/');

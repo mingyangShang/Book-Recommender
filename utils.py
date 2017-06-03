@@ -45,38 +45,49 @@ def QuerySimilarity(cursor,user_i,user_j):
 
 def main():
 
-	# 根据读者ID推荐书籍
-	user_id='10';
-	book_id="0440234743";
-	book_recommend_list=recommend_books(user_id);
-	print book_recommend_list;
+	# print buy_book("100", "0898861411")
+	# # 根据读者ID推荐书籍
+	# user_id='100';
+	# book_id="0440234743";
+	# book_recommend_list=recommend_books(user_sim, user_id);
+	# print book_recommend_list;
+    #
+	# # 根据ISBN号、书名、作者查找书籍
+	# key="440234743";
+	# books=search(key);
+	# print books[0].name;
+    #
+	# # 获取评分最高的若干本书籍
+	# books=popular_books(5);
+	# print books[0].score;
+    #
+    #
+	# # 新用户注册
+	# name="lhz";
+	# password="789789";
+	# age="30";
+	# location="bengbu";
+	# user=register(name,password,age,location);
+	# print user.name;
+    #
+	# # 用户登录
+	# username = "lhz";
+	# password = "789789";
+	# user = login(username, password);
+	# print user.id;
 
-	# 根据ISBN号、书名、作者查找书籍
-	key="0440234743";
-	books=search(key);
-	print books[0].name;
-
-	# 获取评分最高的若干本书籍
-	books=popular_books(5);
-	print books[0].score;
-
-
-	# 新用户注册
-	name="lhz";
-	password="789789";
-	age="30";
-	location="bengbu";
-	user=register(name,password,age,location);
-	print user.name;
-
-	# 用户登录
-	username = "lhz";
-	password = "789789";
-	user = login(username, password);
-	print user.id;
+	print "dasd"
+	print buyed_books("10")
 
 def buy_book(userid, bookid):
-	return True
+	conn, flag = mysqlconn();
+	cursor=conn.cursor();
+	# 插入数据库
+	sql = "insert into user_book (user_id, book_id) VALUES ('%s','%s')" % (userid, bookid);
+	row_affected = cursor.execute(sql);
+	conn.commit();
+	mysqlclose(conn, flag);
+	return row_affected > 0
 
 # 建立数据库连接
 def mysqlconn():
@@ -162,7 +173,7 @@ def search(key):
 	mysqlclose(conn,flag);
 	return books;# 返回book列表
 
-def recommend_books(user_id):
+def recommend_books(sim_map, user_id):
 	"""
 	:param user_id,book_id
 	:return list
@@ -174,7 +185,7 @@ def recommend_books(user_id):
 	rank=[];
 	recommend_list=[];
 	K=5;
-	N=5;
+	N=12;
 	# 针对挑选前K个最相似的
 	user_K=[];
 	sql="select user_j from user_sim where user_i='%s' order by similarity desc LIMIT %d" %(user_id,K);
@@ -199,7 +210,7 @@ def recommend_books(user_id):
 
 		similarity=0.0;
 		for user in user_intersection_list:
-			similarity+=user_sim[user_id][user];
+			similarity+=sim_map[user_id][user];
 		all_recommend[book_id]=similarity;
 
 	top_list=sorted(all_recommend.items(), lambda x, y: cmp(x[1], y[1]), reverse=True)[:N];
