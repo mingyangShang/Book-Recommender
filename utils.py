@@ -2,18 +2,18 @@
 # -*- coding: utf-8 -*-
 
 import MySQLdb;
+import csv;
 from operator import itemgetter;
 from model.model import Book, User
 
-# 根据ISBN号(book_id)查找书籍
-# 根据书名(title)查找书籍
-# 根据作者(author)查找书籍
-# 根据ISBN号查找所有读者
-# 根据读者ID查找所有已读书籍
-# 根据读者ID查找读者信息
-# 根据读者ID、ISBN号推荐书籍
-# 获取评分最高的若干本书籍
-
+user_sim={};
+# 读取user_sim文件
+with open("./User_Based algorithm/user_sim.csv") as f:
+	reader=csv.reader(f);
+	for row in reader:
+		if user_sim.has_key(row[0])==False:
+			user_sim[row[0]]={};
+		user_sim[row[0]][row[1]]=float(row[2]);
 
 # 根据ISBN号查找所有读者
 def QueryUserListByBookId(cursor,book_id):
@@ -35,19 +35,6 @@ def QueryBookListByUserId(cursor,user_id):
 		book_list.append(list(element));
 	return book_list;
 
-# 根据读者ID查找读者信息
-def QueryByUserId(cursor,user_id):
-	user_list=[];
-	sql="select * from users where user_id='%s'" %(user_id);
-	cursor.execute(sql);
-	alldata=cursor.fetchall();
-	for element in alldata:
-		user_list.append(list(element));
-	return user_list;
-
-
-# 根据读者ID、ISBN号推荐书籍
-
 # 查询两个user之间的相似度
 def QuerySimilarity(cursor,user_i,user_j):
 	similarity=0.0;
@@ -57,65 +44,35 @@ def QuerySimilarity(cursor,user_i,user_j):
 	return alldata[0][0];
 
 def main():
-	# conn,cursor,flag=MysqlConn();
 
-	# # 根据ISBN号(book_id)查找书籍
-	# book_id="0156711427";
-	# book_list=[];
-	# book_list=QueryByBookId(cursor,book_id);
-	# # print book_list;
-
-	# # 根据书名(title)查找书籍
-	# title="Politically Correct Bedtime Stories: Modern Tales for Our Life and Times";
-	# title_list=[];
-	# title_list=QueryByBookTitle(cursor,title);
-	# # print title_list;
-
-	# # 根据作者(author)查找书籍
-	# author="Greg Egan";
-	# author_list=[];
-	# author_list=QueryByBookAuthor(cursor,author);
-	# # print author_list;
-
-	# # 根据ISBN号、书名、作者查找书籍
-	# book_id="006109398X";
-	# title="The Treasure Box";
-	# author="Orson Scott Card";
-	# books_list=[];
-	# books_list=QueryByBookInfo(cursor,book_id,title,author);
-	# # print books_list;
-
-	# # 根据ISBN号查找所有读者
-	# book_id="0440234743";
-	# user_read_list=[];
-	# user_read_list=QueryUserListByBookId(cursor, book_id);
-	# # print user_read_list;
-
-	# # 根据读者ID查找所有已读书籍
-	# user_id='277378';
-	# book_read_list=[];
-	# book_read_list=QueryBookListByUserId(cursor,user_id);
-	# # print book_read_list;
-
-	# # 根据读者ID查找读者信息
-	# user_id='10';
-	# user_list=[];
-	# user_list=QueryByUserId(cursor,user_id);
-	# # print user_list;
-
-	# 根据读者ID、ISBN号推荐书籍
+	# 根据读者ID推荐书籍
 	user_id='10';
 	book_id="0440234743";
 	book_recommend_list=recommend_books(user_id);
 	print book_recommend_list;
 
-	# key="0440234743";
-	# books=search(key);
-	# print books[0].name;
+	# 根据ISBN号、书名、作者查找书籍
+	key="0440234743";
+	books=search(key);
+	print books[0].name;
 
-	# # 获取评分最高的若干本书籍
-	# books=popular_books(5);
-	# print books[0].score;
+	# 获取评分最高的若干本书籍
+	books=popular_books(5);
+	print books[0].score;
+
+	# 用户登录
+	username="lhz";
+	password="789789";
+	user=login(username,password);
+	print user.id;
+
+	# 新用户注册
+	name="lhz";
+	password="789789";
+	age="30";
+	location="bengbu";
+	user=register(name,password,age,location);
+	print user.name;
 
 
 # 建立数据库连接
@@ -136,21 +93,57 @@ def mysqlclose(conn,flag):
 		cursor.close;
 		conn.close;
 
+# 新用户注册
 def register(name, passwd, age, location):
 	"""
 	:param name, passwd, age, location
 	:param
 	"""
-	return User() # TODO parameter
+	conn,flag=mysqlconn();
+	# 获取users表中最大的user_id,最大值加1作为新的user的id
+	sql="select max(cast(user_id AS SIGNED)) from users";
+	cursor=conn.cursor();
+	cursor.execute(sql);
+	alldata=cursor.fetchall();
+	max_id=alldata[0][0];
+	user_id=str(max_id+1);
+	# 插入数据库
+	sql="insert into users (user_id, location, age, username, password) VALUES ('%s','%s','%s','%s','%s')" %(user_id,location,age,name,passwd);
+	cursor.execute(sql);
+	conn.commit();
+	user=None;
+	user=User(user_id,name,passwd,age,location);
+	mysqlclose(conn,flag);
+	return user;# 返回user对象
 
+# 用户登录
 def login(name, passwd):
-	return User() # TODO parameter
+	conn,flag=mysqlconn();
+	sql="select * from users where username='%s' and password=%s" %(name,passwd);
+	cursor=conn.cursor();
+	cursor.execute(sql);
+	alldata=cursor.fetchall();
+	user=None;
+	if len(alldata)==0:
+		print "User or password wrong";
+	else:
+		for element in alldata:
+			user=User(element[0],element[3],element[4],element[2],element[1]);
+	mysqlclose(conn,flag);
+	return user;# 返回user对象
 
-
+# 根据读者user_name查找读者信息
 def userinfo(name):
-	return User() # TODO parameter
-
-
+	conn,flag=mysqlconn();
+	sql="select * from users where username='%s'" %(name);
+	cursor=conn.cursor();
+	cursor.execute(sql);
+	alldata=cursor.fetchall();
+	user=None;
+	for element in alldata:
+		user=User(element[0],element[3],element[4],element[2],element[1]);#id,name,passwd,age,location
+	mysqlclose(conn,flag);
+	return user;# 返回user对象
 
 # 根据ISBN号、书名、作者查找书籍
 def search(key):
@@ -164,7 +157,7 @@ def search(key):
 		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
 		books.append(book);
 	mysqlclose(conn,flag);
-	return books;
+	return books;# 返回book列表
 
 def recommend_books(user_id):
 	"""
@@ -203,7 +196,7 @@ def recommend_books(user_id):
 
 		similarity=0.0;
 		for user in user_intersection_list:
-			similarity+=float(QuerySimilarity(cursor,user_id,user));
+			similarity+=user_sim[user_id][user];
 		all_recommend[book_id]=similarity;
 
 	top_list=sorted(all_recommend.items(), lambda x, y: cmp(x[1], y[1]), reverse=True)[:N];
@@ -230,10 +223,20 @@ def popular_books(k):
 		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
 		books.append(book);
 	mysqlclose(conn,flag);
-	return books;
+	return books;# 返回book列表
 
+# 根据ISBN号(book_id)查找书籍
 def bookinfo(book_id):
-	return Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")
+	conn,flag=mysqlconn();
+	sql="select * from books where book_id='%s'" %(book_id);
+	cursor=conn.cursor();
+	cursor.execute(sql);
+	alldata=cursor.fetchall();
+	book=None;
+	for element in alldata:
+		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
+	mysqlclose(conn,flag);
+	return book;# 返回book对象
 
 if __name__ == '__main__':
 	main();
