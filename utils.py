@@ -3,7 +3,7 @@
 
 import MySQLdb;
 from operator import itemgetter;
-from model.model import Book
+from model.model import Book, User
 
 # 根据ISBN号(book_id)查找书籍
 # 根据书名(title)查找书籍
@@ -228,6 +228,17 @@ def main():
 
 	MysqlClose(conn,cursor,flag);
 
+def register(name, passwd, age, location):
+	"""
+	:param name, passwd, age, location
+	:param
+	"""
+	return User() # TODO parameter
+
+def login(name, passwd):
+	return User() # TODO parameter
+
+
 def search(key):
 	books = []
 	return books
@@ -252,6 +263,7 @@ def popular_books(k):
 	:return books(list)
 	"""
 	return [Book()] * 10
+
 
 if __name__ == '__main__':
 	main();
