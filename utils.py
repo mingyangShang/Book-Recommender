@@ -74,6 +74,11 @@ def main():
 	user=register(name,password,age,location);
 	print user.name;
 
+	# 根据读者ID查找所有已买书籍
+	user_id="44";
+	books=buyed_books(user_id);
+	print books;
+
 
 # 建立数据库连接
 def mysqlconn():
@@ -237,6 +242,19 @@ def bookinfo(book_id):
 		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
 	mysqlclose(conn,flag);
 	return book;# 返回book对象
+
+# 根据读者ID查找所有已买书籍
+def buyed_books(user_id):
+	conn,flag=mysqlconn();
+	book_list=[];
+	sql="select * from books where book_id in (select book_id from user_book where user_id='%s')" %(user_id);
+	cursor=conn.cursor();
+	cursor.execute(sql);
+	alldata=cursor.fetchall();
+	for element in alldata:
+		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
+		book_list.append(book);
+	return book_list;
 
 if __name__ == '__main__':
 	main();
