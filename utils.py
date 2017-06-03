@@ -106,7 +106,7 @@ def main():
 	# 根据读者ID、ISBN号推荐书籍
 	user_id='10';
 	book_id="0440234743";
-	book_recommend_list=recommend_books(user_id,book_id);
+	book_recommend_list=recommend_books(user_id);
 	print book_recommend_list;
 
 	# key="0440234743";
@@ -116,7 +116,6 @@ def main():
 	# # 获取评分最高的若干本书籍
 	# books=popular_books(5);
 	# print books[0].score;
-
 
 
 # 建立数据库连接
@@ -147,6 +146,7 @@ def register(name, passwd, age, location):
 def login(name, passwd):
 	return User() # TODO parameter
 
+
 def userinfo(name):
 	return User() # TODO parameter
 
@@ -166,14 +166,7 @@ def search(key):
 	mysqlclose(conn,flag);
 	return books;
 
-def recommend_item(books):
-	"""
-	:param books:list,
-	:return list
-	"""
-	return [Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")] * 10
-
-def recommend_books(user_id,book_id):
+def recommend_books(user_id):
 	"""
 	:param user_id,book_id
 	:return list
@@ -238,9 +231,6 @@ def popular_books(k):
 		books.append(book);
 	mysqlclose(conn,flag);
 	return books;
-
-def buy_book(user_id, book_id):
-	return True
 
 def bookinfo(book_id):
 	return Book("Book1", "https://img3.doubanio.com/lpic/s29436066.jpg", "isbn1", "author1", "1")
