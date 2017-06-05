@@ -2465,9 +2465,9 @@ html.modal-open.no-flexbox .modal-wrapper .mutiview-dialog {
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    background: #80c3f7;
-    background: -webkit-linear-gradient(top, #80c3f7, #6bbaf8);
-    background: linear-gradient(to bottom, #80c3f7, #6bbaf8);
+    /*background: #80c3f7;*/
+    /*background: -webkit-linear-gradient(top, #80c3f7, #6bbaf8);*/
+    /*background: linear-gradient(to bottom, #80c3f7, #6bbaf8);*/
     border: 1px solid #1D80CF;
     border-radius: 5px;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px rgba(50, 50, 50, .05);
@@ -2478,10 +2478,14 @@ html.modal-open.no-flexbox .modal-wrapper .mutiview-dialog {
 
 .sign-button:active {
     color: #eee;
-    border: 1px solid #0971C5;
-    background: -webkit-linear-gradient(top, #5dadec, #51a4e6);
-    background: linear-gradient(to bottom, #5dadec, #51a4e6);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .1)
+    /*border: 1px solid #0971C5;*/
+    /*background: -webkit-linear-gradient(top, #5dadec, #51a4e6);*/
+    /*background: linear-gradient(to bottom, #5dadec, #51a4e6);*/
+    /*box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .1)*/
+    /*border: 1px solid #545652;*/
+    /*background: -webkit-linear-gradient(top, #545652, #545652);*/
+    /*background: linear-gradient(to bottom, #545652, #545652);*/
+    /*box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .1)*/
 }
 
 .sign-button.sign-button-white {
@@ -2496,10 +2500,10 @@ html.modal-open.no-flexbox .modal-wrapper .mutiview-dialog {
 
 .sign-button.sign-button-white:active {
     color: #424242;
-    background: -webkit-linear-gradient(top, #cddae2, #c9d4dd);
-    background: linear-gradient(to bottom, #cddae2, #c9d4dd);
-    border: 1px solid #297DC0;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .1)
+    /*background: -webkit-linear-gradient(top, #cddae2, #c9d4dd);*/
+    /*background: linear-gradient(to bottom, #cddae2, #c9d4dd);*/
+    /*border: 1px solid #297DC0;*/
+    /*box-shadow: inset 0 1px 2px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .1)*/
 }
 
 .sign-flow {

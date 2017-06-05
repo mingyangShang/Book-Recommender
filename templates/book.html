@@ -28,11 +28,30 @@
                                         <a class="" href="">{{ book.author }}</a>
                                     </span>
                                     <br>
-                                    <span class="pl">
-                                        ISBN :
+                                    <span>
+                                       <span class="pl">ISBN :</span>
+                                        <span> {{ book.isbn }}</span>
                                     </span>
-                                    {{ book.isbn }}
                                     <br>
+                                    <span>
+                                        <span class="pl">Price :</span>
+                                        <span>$</span>
+                                        <span>{{ book.price }}</span>
+                                    </span>
+                                    <br>
+                                    <span>
+                                        <span class="pl">Year :</span>
+                                        <span>{{ book.year }}</span>
+                                    </span>
+                                    <br>
+                                    <span style="display: block; max-width: 130px">
+                                        <span class="pl">Publication :</span>
+                                        <span>{{ book.publication }}</span>
+                                    </span>
+                                    <span style="display: block; max-width: 130px;max-height:200px;overflow: hidden">
+                                        <span class="pl">Introduction:</span>
+                                        <span>{{ book.introduction }}</span>
+                                    </span>
                                     <a id="buy" class="behaviour">Buy</a>
                                 </div>
 
@@ -42,7 +61,7 @@
                             <div class="rating_wrap clearbox">
                                 <div class="rating_logo">Rating</div>
                                 <div class="rating_self clearfix">
-                                    <strong class="ll rating_num">9.2</strong>
+                                    <strong class="ll rating_num">{{ book.score }}</strong>
                                     <span content="10.0"></span>
 
                                     <div class="rating_right">
@@ -51,7 +70,7 @@
                                         <div class="rating_sum">
                                             <span class>
                                                 <a href="" class="rating_people">
-                                                    <span>14</span>
+                                                    <span>140</span>
                                                      people scored
                                                 </a>
                                             </span>
@@ -76,13 +95,13 @@
                             {% for book in interested_books %}
                                 <li>
                                     <div class="cover">
-                                        <a href="/books/{{book.name}}" title="book-info">
+                                        <a href="/books/{{book.isbn}}" title="book-info">
                                             <img src="{{book.cover}}" width="80px" />
                                         </a>
                                     </div>
                                     <div class="info">
                                         <div class="title">
-                                            <a class href="/books/{{book.name}}" title="book-title">{{book.name}}</a>
+                                            <a class href="/books/{{book.isbn}}" title="book-title">{{book.name}}</a>
                                         </div>
                                     </div>
                                 </li>

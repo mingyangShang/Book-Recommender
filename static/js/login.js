@@ -39,7 +39,7 @@ function signup() {
             success: function (data) {
                 data = $.parseJSON(data);
                 if (data.result == -1) {
-                    alert(data.error);
+                    alert(data.msg);
                 } else if (data.result == 1) {
                     //to login
                     switchToSignin();
@@ -65,7 +65,7 @@ function signin() {
             success: function (data) {
                 data = $.parseJSON(data);
                 if (data.result == -1) {
-                    alert(data.error);
+                    alert(data.msg);
                 } else if (data.result == 1) {
                     $.cookie('logined', true, {expires: 7, path: '/'});
                     $.cookie('user', data.content.username, {expires: 7, path: '/'});

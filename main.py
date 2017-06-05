@@ -31,7 +31,7 @@ def book_info(bookid):
 @app.route('/user/<username>/')
 def user_info(username):
     buyed_books = utils.buyed_books(curr_user.id)
-    return render_template('userpage.html', username=curr_user.name, books=buyed_books)
+    return render_template('userpage.html', user=curr_user, books=buyed_books)
 
 @app.route('/login/')
 def login():

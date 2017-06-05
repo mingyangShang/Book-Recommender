@@ -140,6 +140,7 @@ def login(name, passwd):
 	user=None;
 	if len(alldata)==0:
 		print "User or password wrong";
+		return None
 	else:
 		for element in alldata:
 			user=User(element[0],element[3],element[4],element[2],element[1]);
@@ -168,7 +169,7 @@ def search(key):
 	alldata=cursor.fetchall();
 	books = [];
 	for element in alldata:
-		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
+		book=Book(element[1],element[5],element[0],element[2],element[8], price=element[9], introduction=element[10], year=element[3], publication=element[4]);#title,url_s,book_id,author,avg
 		books.append(book);
 	mysqlclose(conn,flag);
 	return books;# 返回book列表
@@ -184,7 +185,7 @@ def recommend_books(sim_map, user_id):
 	all_recommend={};
 	rank=[];
 	recommend_list=[];
-	K=5;
+	K=20;
 	N=12;
 	# 针对挑选前K个最相似的
 	user_K=[];
@@ -219,6 +220,9 @@ def recommend_books(sim_map, user_id):
 		
 	for book_id in rank:
 		recommend_list.extend(search(book_id));
+	if len(recommend_list) < 12:
+		recommend_list = recommend_list + popular_books(12)
+		recommend_list = recommend_list[:12]
 	return recommend_list;
 
 # 获取评分最高的若干本书籍
@@ -234,7 +238,7 @@ def popular_books(k):
 	alldata=cursor.fetchall();
 	books = [];
 	for element in alldata:
-		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
+		book=Book(element[1],element[5],element[0],element[2],element[8], price=element[9], introduction=element[10], year=element[3], publication=element[4]);#title,url_s,book_id,author,avg
 		books.append(book);
 	mysqlclose(conn,flag);
 	return books;# 返回book列表
@@ -248,7 +252,7 @@ def bookinfo(book_id):
 	alldata=cursor.fetchall();
 	book=None;
 	for element in alldata:
-		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
+		book=Book(element[1],element[5],element[0],element[2],element[8], price=element[9], introduction=element[10], year=element[3], publication=element[4]);#title,url_s,book_id,author,avg
 	mysqlclose(conn,flag);
 	return book;# 返回book对象
 
@@ -261,7 +265,7 @@ def buyed_books(user_id):
 	cursor.execute(sql);
 	alldata=cursor.fetchall();
 	for element in alldata:
-		book=Book(element[1],element[5],element[0],element[2],element[8]);#title,url_s,book_id,author,avg
+		book=Book(element[1],element[5],element[0],element[2],element[8], price=element[9], introduction=element[10], year=element[3], publication=element[4]);#title,url_s,book_id,author,avg
 		book_list.append(book);
 	return book_list;
 

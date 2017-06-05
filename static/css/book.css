@@ -64,6 +64,7 @@ a img {
     float: left;
     max-width: 248px;
     word-wrap: break-word;
+    font-size: 12px;
 }
 a.behaviour{
     margin-top: 10px;
